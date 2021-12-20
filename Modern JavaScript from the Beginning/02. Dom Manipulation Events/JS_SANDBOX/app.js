@@ -145,7 +145,7 @@ for(let i = 0; i < liEven.length; i++){
 }
 
 console.log(items);
-*/
+
 
 
 
@@ -199,3 +199,36 @@ val = listItem.previousElementSibling;
 
 
 console.log(val);
+*/
+
+// 026 Creating Elements
+
+// Create element
+const li = document.createElement('li');
+
+// Add class
+li.className = 'collection-item';
+
+// Add id
+li.id = 'New-item';
+
+// Add attribute
+li.setAttribute('title', 'New Item');
+
+// Create text node and append
+li.appendChild(document.createTextNode('Hello World'));
+
+// Create new link element
+const link = document.createElement('a');
+// Add classes
+link.className = 'delete-item secondary-content';
+// Add icon HTML
+link.innerHTML = '<i class="fa fa-remove"></i>';
+
+// Append link into li
+li.appendChild(link);
+
+// Append li as child to ul
+document.querySelector('ul.collection').appendChild(li);
+
+console.log(li);
