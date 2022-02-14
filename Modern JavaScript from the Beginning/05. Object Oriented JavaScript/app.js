@@ -1,9 +1,9 @@
 // Person constructor
 
-function Person() {
-    this.name = 'Brad';
+function Person(name) {
+    this.name = name;
+    console.log(this)
 }
 
-const brad = new Person();
-
-console.log(brad);
+const brad = new Person('Brad');
+const john = new Person('John');
