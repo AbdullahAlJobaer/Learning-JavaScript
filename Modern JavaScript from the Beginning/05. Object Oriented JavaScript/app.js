@@ -1,9 +1,19 @@
 // Person constructor
-
-function Person(name) {
+function Person(name, dob) {
     this.name = name;
-    console.log(this)
+    // this.age = age;
+    this.birthday = new Date(dob);
+    this.calculateAge = function(){
+        const diff = Date.now() - this.birthday.getTime();
+        const ageDate = new Date(diff);
+        return Math.abs(ageDate.getUTCFullYear() - 1970);
+    }
 }
 
-const brad = new Person('Brad');
-const john = new Person('John');
+// const brad = new Person('Brad', 36);
+// const john = new Person('John', 30);
+
+// console.log(john.age);
+
+const brad = new Person('Brad', '3-05-1995');
+console.log(brad.calculateAge());
