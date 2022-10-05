@@ -82,16 +82,39 @@
 
 // console.log(lapsCompleted);
 
+// let countEl = document.getElementById("count-el")
+
+// console.log(countEl);
+
+// let count = 0;
+
+// function increment() {
+//     //console.log("Clicked!");
+//     count = count + 1
+//     countEl.innerText = count
+//     //console.log(count);
+
+// }
+
+// let count = 0
+// let countEl = document.getElementById("count-el")
+
+// function increment() {
+//     count = count + 1
+//     countEl.innerText = count;
+//     console.log(count);
+// }
+
+
+let count = 0
 let countEl = document.getElementById("count-el")
 
-console.log(countEl);
-
-let count = 0;
-
 function increment() {
-    //console.log("Clicked!");
     count = count + 1
-    countEl.innerText = count
-    //console.log(count);
+    countEl.innerText = count;
+    console.log(count);
+}
 
+function save(){
+    console.log(count);
 }
