@@ -105,7 +105,7 @@
 //     console.log(count);
 // }
 
-
+/*
 let count = 0
 let countEl = document.getElementById("count-el")
 
@@ -118,3 +118,12 @@ function increment() {
 function save(){
     console.log(count);
 }
+*/
+
+let userName = "per"
+let message = "You have three new notifications"
+let messageToUser = message + ", " + userName
+
+//console.log(message + ", " + userName + "!");
+
+console.log(messageToUser);
