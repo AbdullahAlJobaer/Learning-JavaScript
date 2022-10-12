@@ -120,6 +120,7 @@ function save(){
 }
 */
 
+/*
 let userName = "per"
 let message = "You have three new notifications"
 let messageToUser = message + ", " + userName
@@ -127,3 +128,13 @@ let messageToUser = message + ", " + userName
 //console.log(message + ", " + userName + "!");
 
 console.log(messageToUser);
+*/
+
+
+//S1L20 Log a greeting to the console (6 OCT)
+
+let name = "Jobaer"
+let greeting = "Hi, my name is "
+let myGreeting = greeting + name
+
+console.log(myGreeting);
