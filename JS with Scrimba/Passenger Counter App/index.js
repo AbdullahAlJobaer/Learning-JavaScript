@@ -140,8 +140,9 @@ let myGreeting = greeting + name
 console.log(myGreeting);
 */
 
-//S1L21 Strings vs Numbers
+/*
 
+//S1L21 Strings vs Numbers
 
 let name = "Jobaer"
 let greeting = "Hi, my name is "
@@ -160,3 +161,19 @@ console.log(4 + 5); // 9
 console.log("2" + "4"); // "24"
 console.log("5" + 1); // "51"
 console.log(100 + "100"); // "100100"
+
+*/
+
+//S1L24 Use plus equal for count
+
+let countEl = document.getElementById("count-el")
+let count = 0
+
+function increment() {
+    count += 1
+    countEl.innerText = count
+}
+
+function save() {
+    console.log(count);
+}
