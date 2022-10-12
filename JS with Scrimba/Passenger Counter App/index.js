@@ -199,6 +199,7 @@ function save() {
 }
 */
 
+/*
 //S1L26 Debugging online
 
 let countEl = document.getElementById("count-el")
@@ -214,4 +215,22 @@ function save() {
     let countStr = count + " - "
     saveEl.textContent += countStr
     console.log(count);
+}
+*/
+
+//S1L27 Set the count to 0
+let countEl = document.getElementById("count-el")
+let saveEl = document.getElementById("save-el")
+let count = 0
+
+function increment() {
+    count += 1
+    countEl.textContent = count
+}
+
+function save() {
+    let countStr = count + " - "
+    saveEl.textContent += countStr
+    countEl.textContent = 0
+    count = 0
 }
