@@ -42,6 +42,7 @@ remove1Point()
 console.log(myPoints);
 */
 
+/*
 //S2L4 Strings and numbers
 
 console.log("2" + 2);   // "22"
@@ -50,3 +51,14 @@ console.log(6 + "5");   // "65"
 console.log("My points: " + 5 + 9);   // "My points: 59"
 console.log(2 + 2);   // 4
 console.log("11" + "14");   // "1114"
+
+*/
+
+//S2L5 Rendering an error message
+
+let btnError = document.getElementById("error")
+
+function purchase() {
+    //console.log("Button was clicked");
+    btnError.textContent = "Something went wrong, please try again"
+}
