@@ -122,7 +122,7 @@ console.log(11 <= 11); // true
 console.log(3 <= 2);   // false
 */
 
-
+/*
 //S3L10 Add the message variable
 
 let firstCard = 10
@@ -132,6 +132,7 @@ let hasBlackJack = false
 let isAlive = true
 let message = ""
 
+ 
 if (sum <= 20) {
     message = "Do you want to draw a new card?"
 } else if (sum === 21) {
@@ -143,8 +144,57 @@ if (sum <= 20) {
 }
 
 console.log(message);
+*/
 
 
 //S3L12 Add basic styling
 
+/*
+//S3L13 Make the start button work
 
+let firstCard = 10
+let secondCard = 11
+let sum = firstCard + secondCard
+let hasBlackJack = false
+let isAlive = true
+let message = ""
+
+function startGame() {  
+    if (sum <= 20) {
+        message = "Do you want to draw a new card?"
+    } else if (sum === 21) {
+        message = "Woohoo! You've got Blackjack!"
+        hasBlackJack = true
+    } else {
+        message = "You're out of the game!"
+        isAlive = false
+    }
+    
+    console.log(message);
+}
+*/
+
+//S3L14 Display the message
+
+let firstCard = 10
+let secondCard = 12
+let sum = firstCard + secondCard
+let hasBlackJack = false
+let isAlive = true
+let message = ""
+let messageEl = document.getElementById("message-el")
+
+function startGame() {  
+    if (sum <= 20) {
+        message = "Do you want to draw a new card?"
+       
+    } else if (sum === 21) {
+        message = "You've got Blackjack!"
+        hasBlackJack = true
+    } else {
+        message = "You're out of the game!"
+        isAlive = false
+    }
+
+    messageEl.textContent = message
+}
