@@ -7,7 +7,7 @@ let sum = firstCard + secondCard
 
 console.log(sum);
 */
-
+/*
 //S3L3 if...else conditionals
 
 let firstCard = 15
@@ -21,3 +21,130 @@ if (sum < 21) {
 } else {
     console.log("You're out of the game!");
 }
+*/
+
+/*
+//S3L4 Your first if...else statement
+
+let age = 20
+
+if (age < 21) {
+    console.log("You can not enter the club!");
+} else {
+    console.log("Welocome!");
+}
+*/
+
+/*
+//S3L5 if/else... if/else statement
+
+let age = 101
+
+if (age < 100) {
+    console.log("Not eligible!");
+} else if (age === 100) {
+    console.log("Here is your birthday card from the King!");
+} else {
+    console.log("Not eligible, you've already gotten one!");
+}
+*/
+
+/*
+//S3L6 The if...else statement for our game
+
+let firstCard = 10
+let secondCard = 7
+let sum = firstCard + secondCard
+
+if (sum <= 20) {
+    console.log("Do you want to draw a new card?");
+} else if (sum === 21) {
+    console.log("Woohoo! You've got Blackjack!");
+} else {
+    console.log("You're out of the game!");
+}
+*/
+
+/*
+//S3L7 Add the hasBlackJack variable
+
+let firstCard = 10
+let secondCard = 11
+let sum = firstCard + secondCard
+let hasBlackJack = false
+
+if (sum <= 20) {
+    console.log("Do you want to draw a new card?");
+} else if (sum === 21) {
+    console.log("Woohoo! You've got Blackjack!");
+    hasBlackJack = true
+} else {
+    console.log("You're out of the game!");
+}
+
+// CASH OUT!
+console.log(hasBlackJack);
+*/
+
+/*
+//S3L8 Add the isAlive varible
+
+let firstCard = 10
+let secondCard = 11
+let sum = firstCard + secondCard
+let hasBlackJack = false
+let isAlive = true
+
+if (sum <= 20) {
+    console.log("Do you want to draw a new card?");
+} else if (sum === 21) {
+    console.log("Woohoo! You've got Blackjack!");
+    hasBlackJack = true
+} else {
+    console.log("You're out of the game!");
+    isAlive = false
+}
+
+// CASH OUT!
+console.log(hasBlackJack);
+console.log(isAlive);
+*/
+
+/*
+//S3:9 Let's practice boolean conditions
+
+console.log(4 === 3);  // false
+console.log(5 > 2);    // true
+console.log(12 > 12);  // false
+console.log(3 < 0);    // false
+console.log(3 >= 3);   // true
+console.log(11 <= 11); // true
+console.log(3 <= 2);   // false
+*/
+
+
+//S3L10 Add the message variable
+
+let firstCard = 10
+let secondCard = 11
+let sum = firstCard + secondCard
+let hasBlackJack = false
+let isAlive = true
+let message = ""
+
+if (sum <= 20) {
+    message = "Do you want to draw a new card?"
+} else if (sum === 21) {
+    message = "Woohoo! You've got Blackjack!"
+    hasBlackJack = true
+} else {
+    message = "You're out of the game!"
+    isAlive = false
+}
+
+console.log(message);
+
+
+//S3L12 Add basic styling
+
+
