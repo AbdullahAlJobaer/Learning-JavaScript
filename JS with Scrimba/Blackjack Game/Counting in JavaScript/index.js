@@ -7,7 +7,7 @@ for (let count = 10; count < 21; count +=1) {
 
 }
 */
-
+/*
 //S3L28 Write your first loop
 
 // Create a for loop that counts 10 to 100 in steps of 10
@@ -15,4 +15,33 @@ for (let count = 10; count < 21; count +=1) {
 
 for (let i = 10; i < 101; i +=10) {
     console.log(i);  
+}
+*/
+/*
+//S3L29 For loops and arrays
+
+let messages = [
+    "Hey, how's it going?",
+    "I'm great, thank you! How about you?",
+    "All good. Been working on my portfolio lately.",
+    "Same here!",
+    "Great to hear",
+    "Thanks"
+]
+
+for(i = 0; i < messages.length; i += 1) {
+    console.log(messages[i]);
+}
+*/
+
+
+//S3L30 Write your first array-based loop
+
+let cards = [7, 3, 9]
+
+// Create a for loop that logs out all the cards in the array
+// Use cards.length to specify how long the loop should run
+
+for(let i = 0; i < cards.length; i++) {
+    console.log(cards[i]);
 }
