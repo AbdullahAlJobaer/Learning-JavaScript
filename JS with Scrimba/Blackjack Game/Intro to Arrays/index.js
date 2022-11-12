@@ -18,7 +18,7 @@ let myExperience = [
 ]
 
 */
-
+/*
 //S3L22 Array Indexes
 
 let featuredPosts = [
@@ -39,3 +39,15 @@ let myExperience = [
 console.log(myExperience[1]);
 console.log(myExperience[2]);
 console.log(myExperience[0]);
+*/
+
+//S3L23 Arrays with multiple data types
+// Array - ordered list of items - composite / complex data type
+
+let myName = "Abdullah Al Jobaer"
+let myAge = 27
+let likePizza = true
+
+let aboutMyself = [myName, myAge, likePizza]
+
+console.log(aboutMyself);
