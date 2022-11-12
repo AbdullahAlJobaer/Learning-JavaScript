@@ -34,7 +34,7 @@ for(i = 0; i < messages.length; i += 1) {
 }
 */
 
-
+/*
 //S3L30 Write your first array-based loop
 
 let cards = [7, 3, 9]
@@ -44,4 +44,27 @@ let cards = [7, 3, 9]
 
 for(let i = 0; i < cards.length; i++) {
     console.log(cards[i]);
+}
+*/
+
+//S3L31 For loops, arrays and DOM
+
+/*
+let sentence = ["Hello ", "my ", "name ", "is ", "Per"]
+let greetingEl = document.getElementById("greeting-el")
+
+// Render the sentence in the greetingEl paragraph using a for loop and .textContent
+for (let i = 0; i < sentence.length; i++) {
+    greetingEl.textContent += sentence[i]
+}
+*/
+
+//S3L31 For loops, arrays and DOM (Part 2)
+
+// How do you kepp the spaces between the words if I remove them from the array?
+let sentence = ["Hello", "my", "name", "is", "Per"]
+let greetingEl = document.getElementById("greeting-el")
+
+for (let i = 0; i < sentence.length; i++) {
+    greetingEl.textContent += sentence[i] + " "
 }
