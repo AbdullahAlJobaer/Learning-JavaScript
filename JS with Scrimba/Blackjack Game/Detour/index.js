@@ -93,7 +93,7 @@ Math.floor(Math.random() * 6) : 0 - 5
 
 */
 
-
+/*
 //S3L40 Completing our dice function
 
 // Create a function, rollDice(), that returns a random number between 1 and 6
@@ -106,3 +106,32 @@ function rollDice() {
 let rollTheDice = rollDice()
 
 console.log(rollTheDice);
+*/
+/*
+//S3L45 The logical AND operator
+
+let hasCompletedCourse = true
+let givesCertificate = true
+
+if (hasCompletedCourse === true && givesCertificate === true ) {
+    generateCertificate()
+}
+
+function generateCertificate() {
+    console.log("Generating certificate....");
+}
+*/
+
+
+//S3L46 Write your first logical operator
+
+let hasSolvedChallenge = false
+let hasHintsLeft = false
+
+if (hasSolvedChallenge === false && hasHintsLeft === false) {
+    showSolution()
+}
+
+function showSolution() {
+    console.log("Showing the solution....");
+}
