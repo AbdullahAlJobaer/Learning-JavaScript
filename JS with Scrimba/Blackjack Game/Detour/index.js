@@ -122,7 +122,7 @@ function generateCertificate() {
 }
 */
 
-
+/*
 //S3L46 Write your first logical operator
 
 let hasSolvedChallenge = false
@@ -134,4 +134,18 @@ if (hasSolvedChallenge === false && hasHintsLeft === false) {
 
 function showSolution() {
     console.log("Showing the solution....");
+}
+*/
+
+//S3L47 The logical OR operator
+
+let likesDocumentaries = true
+let likesStartups = true
+
+if (likesDocumentaries === true || likesStartups === false) {
+    recommendMovie()
+}
+
+function recommendMovie() {
+    console.log("Hey, check out this new film we think you will like!");
 }
