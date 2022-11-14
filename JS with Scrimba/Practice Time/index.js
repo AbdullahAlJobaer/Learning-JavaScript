@@ -75,7 +75,7 @@ for (let i = 0; i < largeCountries.length; i++) {
 }
 */
 
-
+/*
 //S4L4 Push, pop, unshift, shift challange
 
 // You need to help me fixup the largeCountries array so that 
@@ -95,3 +95,16 @@ largeCountries.pop("Monaco")
 largeCountries.push("Pakistan")
 
 console.log(largeCountries);
+*/
+
+//S4L5 Logical Operators
+
+// If it is Friday the 13th, log out this spooky face: 😱
+// Use the logical "AND operator" -> &&
+
+let dayOfMonth = 13
+let weekday = "Friday"
+
+if (dayOfMonth === 13 && weekday === "Friday") {
+    console.log("😱");
+}
