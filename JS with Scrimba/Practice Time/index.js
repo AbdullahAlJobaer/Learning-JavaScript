@@ -23,6 +23,7 @@ function logData() {
 logData()
 
 */
+/*
 
 //S4L2 if else
 
@@ -48,4 +49,27 @@ if (age < 6) {
     console.log("Full price!");
 } else {
     console.log("Senior citizen discount!");
+}
+
+*/
+
+
+//S4L3 Loops and arrays
+/* 
+Use a for loop to log the following to the console:
+
+The 5 largest countries in the world:
+- China
+- India
+- United States
+- Indinesia
+- Pakistan
+*/
+
+let largeCountries = ["China", "India", "USA", "Indonesia", "Pakistan"]
+
+console.log("The 5 largest countries in the world:");
+
+for (let i = 0; i < largeCountries.length; i++) {
+    console.log("- " + largeCountries[i]);
 }
