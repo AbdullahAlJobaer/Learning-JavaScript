@@ -53,7 +53,7 @@ if (age < 6) {
 
 */
 
-
+/*
 //S4L3 Loops and arrays
 /* 
 Use a for loop to log the following to the console:
@@ -64,7 +64,7 @@ The 5 largest countries in the world:
 - United States
 - Indinesia
 - Pakistan
-*/
+
 
 let largeCountries = ["China", "India", "USA", "Indonesia", "Pakistan"]
 
@@ -73,3 +73,25 @@ console.log("The 5 largest countries in the world:");
 for (let i = 0; i < largeCountries.length; i++) {
     console.log("- " + largeCountries[i]);
 }
+*/
+
+
+//S4L4 Push, pop, unshift, shift challange
+
+// You need to help me fixup the largeCountries array so that 
+// China and Pakistan are added back into their respective places
+
+// Use push() & pop() and their counterparts unshift() & shift()
+// Google how to use unshift() and shift()
+
+let largeCountries = ["Tuvalu", "India", "USA", "Indonesia", "Monaco"]
+
+largeCountries.shift()
+
+largeCountries.unshift("China")
+
+largeCountries.pop("Monaco")
+
+largeCountries.push("Pakistan")
+
+console.log(largeCountries);
