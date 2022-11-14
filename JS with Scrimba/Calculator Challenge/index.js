@@ -12,9 +12,9 @@ function add() {
     sumEl.textContent = "Sum: " + result
 }
 
-function multiply() {
-    //console.log("Multiply function selected");
-    let result = num1 * num2
+function subtract() {
+    //console.log("Subtract function selected");
+    let result = num1 - num2
     sumEl.textContent = "Sum: " + result
 }
 
@@ -24,8 +24,8 @@ function divide() {
     sumEl.textContent = "Sum: " + result
 }
 
-function subtract() {
-    //console.log("Subtract function selected");
-    let result = num1 - num2
+function multiply() {
+    //console.log("Multiply function selected");
+    let result = num1 * num2
     sumEl.textContent = "Sum: " + result
 }
