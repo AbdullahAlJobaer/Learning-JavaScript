@@ -11,3 +11,9 @@ function add() {
     let result = num1 + num2
     sumEl.textContent = "Sum: " + result
 }
+
+function subtract() {
+    //console.log("Subtract function selected");
+    let result = num1 - num2
+    sumEl.textContent = "Sum: " + result
+}
