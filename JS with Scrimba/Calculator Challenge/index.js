@@ -17,3 +17,9 @@ function subtract() {
     let result = num1 - num2
     sumEl.textContent = "Sum: " + result
 }
+
+function divide() {
+    //console.log("Divide function selected");
+    let result = num1 / num2
+    sumEl.textContent = "Sum: " + result
+}
