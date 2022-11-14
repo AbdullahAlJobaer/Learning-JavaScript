@@ -96,6 +96,7 @@ largeCountries.push("Pakistan")
 
 console.log(largeCountries);
 */
+/*
 
 //S4L5 Logical Operators
 
@@ -108,3 +109,17 @@ let weekday = "Friday"
 if (dayOfMonth === 13 && weekday === "Friday") {
     console.log("😱");
 }
+
+*/
+
+
+//S4L6 Rock papers scissors
+
+let hands = ["Rock", "Paper", "Scissor"]
+
+function getHand() {
+    let random = Math.floor(Math.random()*hands.length)
+    return hands[random]
+}
+
+console.log(getHand());
