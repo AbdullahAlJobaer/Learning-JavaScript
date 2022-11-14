@@ -136,7 +136,7 @@ function showSolution() {
     console.log("Showing the solution....");
 }
 */
-
+/*
 //S3L47 The logical OR operator
 
 let likesDocumentaries = true
@@ -149,3 +149,18 @@ if (likesDocumentaries === true || likesStartups === false) {
 function recommendMovie() {
     console.log("Hey, check out this new film we think you will like!");
 }
+*/
+
+//S3L50 Intro to objects
+
+let course = {
+    title: "Learn CSS Grid for free!",
+    lessons: 16,
+    creator: "Per Harald Borgen",
+    length: 63,
+    level: 2,
+    isFree: true,
+    tags: ["html", "css"]
+}
+
+console.log(course.lessons);
