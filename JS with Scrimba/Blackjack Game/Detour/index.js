@@ -150,7 +150,7 @@ function recommendMovie() {
     console.log("Hey, check out this new film we think you will like!");
 }
 */
-
+/*
 //S3L50 Intro to objects
 
 let course = {
@@ -164,3 +164,21 @@ let course = {
 }
 
 console.log(course.lessons);
+*/
+
+//S3L51 Create your first object
+
+// Create an object that represents an airbnb castle listing
+// It should contain at least one boolean, one string, one number, and one array
+// Log out at least two of the keys using the dot notation
+
+let castle = {
+    title: "Live like a king in my castle",
+    isAvailable: true,
+    price: 190,
+    roomDetail: ["4 guests", "1 bedroom", "2 beds"]
+
+}
+
+console.log(castle.title);
+console.log(castle.price);
