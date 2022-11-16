@@ -1,1 +1,7 @@
-//S5L2 Add button and input tag
+//S5L5 Refactor to addEventListener
+
+let inputBtn = document.getElementById("input-btn")
+
+inputBtn.addEventListener("click", function(){
+    console.log("Button Clicked!");
+})
