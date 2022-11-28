@@ -19,7 +19,7 @@ inputBtn.addEventListener("click", function(){
 
 */
 
-
+/*
 //S5L8 Create the myLeads array and inputEl
 
 // Create two variables:
@@ -32,4 +32,17 @@ const inputBtn = document.getElementById("input-btn")
 
 inputBtn.addEventListener("click", function(){
     console.log("Button Clicked!");
+})
+*/
+
+
+//S5L10 Push to the myLeads array
+
+let myLeads = []
+const inputEl = document.getElementById("input-el")
+const inputBtn = document.getElementById("input-btn")
+
+inputBtn.addEventListener("click", function(){
+    myLeads.push("www.awesomelead.com");
+    console.log(myLeads);
 })
