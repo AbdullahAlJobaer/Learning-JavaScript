@@ -35,7 +35,7 @@ inputBtn.addEventListener("click", function(){
 })
 */
 
-
+/*
 //S5L10 Push to the myLeads array
 
 let myLeads = []
@@ -44,5 +44,18 @@ const inputBtn = document.getElementById("input-btn")
 
 inputBtn.addEventListener("click", function(){
     myLeads.push("www.awesomelead.com");
+    console.log(myLeads);
+})
+*/
+
+
+//S5L11 Push the value from the input field
+
+let myLeads = []
+const inputEl = document.getElementById("input-el")
+const inputBtn = document.getElementById("input-btn")
+
+inputBtn.addEventListener("click", function(){
+    myLeads.push(inputEl.value);
     console.log(myLeads);
 })
