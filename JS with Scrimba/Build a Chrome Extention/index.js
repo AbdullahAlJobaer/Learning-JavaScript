@@ -48,7 +48,7 @@ inputBtn.addEventListener("click", function(){
 })
 */
 
-
+/*
 //S5L11 Push the value from the input field
 
 let myLeads = []
@@ -59,3 +59,21 @@ inputBtn.addEventListener("click", function(){
     myLeads.push(inputEl.value);
     console.log(myLeads);
 })
+*/
+
+//S5L12 Use a for loop to logout leads
+
+let myLeads = ["www.awesomelead.com", "www.epiclead.com", "www.greatlead.com"]
+const inputEl = document.getElementById("input-el")
+const inputBtn = document.getElementById("input-btn")
+
+inputBtn.addEventListener("click", function(){
+    myLeads.push(inputEl.value);
+    console.log(myLeads);
+})
+
+// Log out the items in the myLeads array using a for loop
+
+for (let i = 0; i < myLeads.length; i++) {
+    console.log(myLeads[i]);
+}
