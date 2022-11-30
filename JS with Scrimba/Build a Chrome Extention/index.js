@@ -81,7 +81,7 @@ for (let i = 0; i < myLeads.length; i++) {
 
 */
 
-
+/*
 //S5L14 Render the leads in the unordered list
 
 let myLeads = ["www.awesomelead.com", "www.epiclead.com", "www.greatlead.com"]
@@ -101,4 +101,22 @@ for (let i = 0; i < myLeads.length; i++) {
 
 }
 
+*/
+
+//S5L15 How to render <li> elements with innerHTML
+
+let myLeads = ["www.awesomelead.com", "www.epiclead.com", "www.greatlead.com"]
+const inputEl = document.getElementById("input-el")
+const inputBtn = document.getElementById("input-btn")
+const ulEl = document.getElementById("ul-el")
+
+inputBtn.addEventListener("click", function(){
+    myLeads.push(inputEl.value);
+    console.log(myLeads);
+})
+
+for (let i = 0; i < myLeads.length; i++) {
+    ulEl.innerHTML += "<li>" + myLeads[i] + "</li>"
+
+}
 
