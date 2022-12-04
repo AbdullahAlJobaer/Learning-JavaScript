@@ -14,10 +14,20 @@ input {
 
 button {
     color: white;
+    cursor: pointer;
     font-weight: 650;
     padding: 10px 20px;
     background-color: #5f9341;
     margin-top: 4px;
     margin-bottom: 4px;
     border: none;
+}
+
+button:active {
+    background-color: #3e8e41;
+    transform: translateY(4px);
+  }
+
+#ul-el {
+    font-weight: 700;
 }
