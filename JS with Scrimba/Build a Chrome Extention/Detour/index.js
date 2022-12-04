@@ -1,11 +1,7 @@
-//S5L6 Write your first addEventListener()
+//S5L16 Write your first innerHTML
 
-// 1. Grab the box from the DOM and store it in a variable
-// 2. Add a click event listener to the box 
-// 3. Log out "I want to open the box!" when it's clicked
+// Use .innerHTML to render a Buy! button inside the div container
 
-let box = document.getElementById("box")
+const container = document.getElementById("container")
 
-box.addEventListener("click", function(){
-    console.log("I want to open the box!");
-});
+container.innerHTML = "<button>Buy!</button>"
