@@ -195,7 +195,7 @@ function renderLeads() {
 }
 */
 
-
+/*
 //S5L22 Clear the input field
 
 let myLeads = []
@@ -215,6 +215,32 @@ function renderLeads() {
 
     for (let i = 0; i < myLeads.length; i++) {
         listItems += "<li>" + myLeads[i] + "</li>"
+    }
+
+    ulEl.innerHTML = listItems
+}
+*/
+
+
+//S5L23 Add the <a> tag
+
+let myLeads = []
+let inputEl = document.getElementById("input-el")
+const inputBtn = document.getElementById("input-btn")
+const ulEl = document.getElementById("ul-el")
+
+inputBtn.addEventListener("click", function(){
+    myLeads.push(inputEl.value);
+    inputEl.value = ""
+    renderLeads();
+    
+})
+
+function renderLeads() {
+    let listItems = ""
+
+    for (let i = 0; i < myLeads.length; i++) {
+        listItems += "<li> <a href=' " + myLeads[i] + " ' target = '_blank'>" + myLeads[i] + "</a></li>"
     }
 
     ulEl.innerHTML = listItems
