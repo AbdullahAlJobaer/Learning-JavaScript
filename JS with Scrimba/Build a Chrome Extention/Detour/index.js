@@ -1,14 +1,10 @@
-//S5L16 Write your first innerHTML
+//S5L25 Write your first template string
 
-// Use .innerHTML to render a Buy! button inside the div container
+// template strings/literals
 
-const container = document.getElementById("container")
+const recipient = "James"
 
-container.innerHTML = "<button onclick ='buy()'>Buy!</button>"
+// Refactor the email string to use tamplate strings
+const email = `Hey ${recipient}! How is it going? Cheers Per`
 
-// When clicked, render a paragraph under the button (in the container)
-// that says "Thank you for buying!"
-
-function buy(){
-    container.innerHTML += "<p>Thank you for buying!</p>"
-}
+console.log(email)
