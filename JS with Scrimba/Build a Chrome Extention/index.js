@@ -221,7 +221,7 @@ function renderLeads() {
 }
 */
 
-
+/*
 //S5L23 Add the <a> tag
 
 let myLeads = []
@@ -241,6 +241,36 @@ function renderLeads() {
 
     for (let i = 0; i < myLeads.length; i++) {
         listItems += "<li> <a href=' " + myLeads[i] + " ' target = '_blank'>" + myLeads[i] + "</a></li>"
+    }
+
+    ulEl.innerHTML = listItems
+}
+
+*/
+//S5L24 Template Strings
+
+let myLeads = []
+let inputEl = document.getElementById("input-el")
+const inputBtn = document.getElementById("input-btn")
+const ulEl = document.getElementById("ul-el")
+
+inputBtn.addEventListener("click", function(){
+    myLeads.push(inputEl.value);
+    inputEl.value = ""
+    renderLeads();
+    
+})
+
+function renderLeads() {
+    let listItems = ""
+
+    for (let i = 0; i < myLeads.length; i++) {
+        //listItems += "<li> <a href=' " + myLeads[i] + " ' target = '_blank'>" + myLeads[i] + "</a></li>"
+        listItems += `
+        <li> 
+            <a href= '${myLeads[i]}' +  target = '_blank'> ${myLeads[i]} </a>
+        </li>
+        `
     }
 
     ulEl.innerHTML = listItems
