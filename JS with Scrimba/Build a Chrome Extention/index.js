@@ -251,10 +251,22 @@ function renderLeads() {
 
 //S5L24 Template Strings
 
-let myLeads = []
+let myLeads = `["www.barcalead.com"]`
 let inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
+
+// 1. Turn the myLeads string into an array
+myLeads = JSON.parse(myLeads)
+// 2. Push a new value to the array
+myLeads.push("www.rmalead.com")
+// 3. Turn the array into a string again
+myLeads = JSON.stringify(myLeads)
+// 4. Console.log the string using typeof to verify that it's a string
+console.log(typeof myLeads);
+
+
+
 
 inputBtn.addEventListener("click", function(){
     myLeads.push(inputEl.value);
