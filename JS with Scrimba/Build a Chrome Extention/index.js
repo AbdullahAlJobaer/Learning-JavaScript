@@ -249,7 +249,8 @@ function renderLeads() {
 */
 
 
-//S5L24 Template Strings
+/*
+//S5L34 Strings-Arrays in local storage
 
 let myLeads = `["www.barcalead.com"]`
 let inputEl = document.getElementById("input-el")
@@ -263,7 +264,7 @@ myLeads.push("www.rmalead.com")
 // 3. Turn the array into a string again
 myLeads = JSON.stringify(myLeads)
 // 4. Console.log the string using typeof to verify that it's a string
-console.log(typeof myLeads);
+console.log(myLeads);
 
 
 
@@ -272,6 +273,42 @@ inputBtn.addEventListener("click", function(){
     myLeads.push(inputEl.value);
     inputEl.value = ""
     renderLeads();
+    
+})
+
+function renderLeads() {
+    let listItems = ""
+
+    for (let i = 0; i < myLeads.length; i++) {
+        listItems += `
+        <li> 
+            <a href= '${myLeads[i]}' +  target = '_blank'> ${myLeads[i]} </a>
+        </li>
+        `
+    }
+
+    ulEl.innerHTML = listItems
+}
+
+*/
+
+//S5L35 Save the leads to localStorage
+
+let myLeads = []
+let inputEl = document.getElementById("input-el")
+const inputBtn = document.getElementById("input-btn")
+const ulEl = document.getElementById("ul-el")
+
+
+
+inputBtn.addEventListener("click", function(){
+    myLeads.push(inputEl.value);
+    inputEl.value = ""
+
+    localStorage.setItem("myLeads", JSON.stringify(myLeads))
+    renderLeads();
+
+    console.log(localStorage.getItem("myLeads"));
     
 })
 
