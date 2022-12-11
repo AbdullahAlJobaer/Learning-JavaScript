@@ -369,7 +369,6 @@ function renderLeads() {
 
 //S5L39 Checking localStorage before rendering
 
-
 let myLeads = []
 let inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")

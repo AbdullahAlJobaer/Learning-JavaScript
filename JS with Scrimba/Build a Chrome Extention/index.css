@@ -21,11 +21,15 @@ button {
     background-color: #5f9341;
     margin-top: 4px;
     margin-bottom: 4px;
-    border: none;
+    border: 1px solid #5f9341;;
+}
+
+#delete-btn {
+    color: #5f9341;
+    background-color: white; 
 }
 
 button:active {
-    background-color: #3e8e41;
     transform: translateY(4px);
   }
 
