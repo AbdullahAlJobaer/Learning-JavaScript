@@ -26,7 +26,7 @@ console.log( add(3, 4) );
 console.log( add(9, 102) );
 */
 
-
+/*
 //S5L46 Arguments vs Parameters
 
 function greetUser(greeting, name) {
@@ -40,3 +40,16 @@ function add(num1, num2) {
 }
 
 add(3, 4)
+*/
+
+//S5L47 Arrays vs Parameters
+
+// Create a function, getFirst(arr), that returns the first item in the array
+
+function getFirst(arr) {
+    return arr[0]
+}
+
+// Call it with an array as an argument to verify that it works
+
+console.log (getFirst([8, 7, 9, 10]))
