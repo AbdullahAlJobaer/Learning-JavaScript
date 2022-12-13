@@ -1,12 +1,12 @@
 
-//S5L43 Write your first function parameter
+//S5L44 Functions with multiple parameters
 
 const welcomeEl = document.getElementById("welcome-el")
 
 // Give the function a parameter, greeting, that replaces "Welcome back"
 
-function greetUser(greeting) {
-    welcomeEl.textContent = greeting + "Per Harald Borgen"
+function greetUser(greeting, name) {
+    welcomeEl.textContent = `${greeting}, ${name}`
 }
 
-greetUser("Welcome back, ")
+greetUser("Welcome back", "Per Harald Borgen!")
