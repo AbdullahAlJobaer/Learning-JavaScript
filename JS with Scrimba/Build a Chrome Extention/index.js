@@ -652,10 +652,6 @@ if (leadsFromLocalStorage) {
     render(myLeads)
 }
 
-const tabs = [
-    {url: "https://www.linkedin.com/in/per-harald-borgen/"}
-]
-
 tabBtn.addEventListener("click", function(){
     
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
@@ -693,6 +689,5 @@ inputBtn.addEventListener("click", function(){
     localStorage.setItem("myLeads", JSON.stringify(myLeads))
     render(myLeads);
 
-    console.log(localStorage.getItem("myLeads"));
-    
+    console.log(localStorage.getItem("myLeads"));    
 })
