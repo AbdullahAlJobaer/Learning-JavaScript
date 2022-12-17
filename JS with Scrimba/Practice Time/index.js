@@ -145,7 +145,7 @@ if (hasWon) {
 // Go through all variables and decide if they should be let or const
 // Change the console logs to use template strings instead of double quotes
 */
-
+/*
 //S6L2 Log out items in an array
 
 let myCourses = ["Learn CSS Animations", "UI Design Fundamentals", "Intro to Clean Code"]
@@ -161,3 +161,17 @@ function showCourse(arr) {
 }
 
 showCourse(myCourses)
+
+*/
+
+//S6L3 Save to localStorage
+
+// Save a value to localStorage
+// Delete your code and refresh the page
+// Fetch your value from localStorage and log it out
+
+
+//localStorage.setItem("a", "150")
+
+
+console.log( localStorage.getItem("a") );
