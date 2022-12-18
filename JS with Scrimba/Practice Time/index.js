@@ -163,7 +163,7 @@ function showCourse(arr) {
 showCourse(myCourses)
 
 */
-
+/*
 //S6L3 Save to localStorage
 
 // Save a value to localStorage
@@ -173,5 +173,30 @@ showCourse(myCourses)
 
 //localStorage.setItem("a", "150")
 
-
 console.log( localStorage.getItem("a") );
+
+*/
+
+
+//S6L4 addEventListener and object in array
+
+let data = [
+    {
+        player: "Jane",
+        score: 52
+    },
+    {
+        player: "Mark",
+        score: 41
+    }
+]
+
+// Fetch the button from the DOM, store it in a variable
+// Use addEventListener() to listen for button clicks
+// Log Jane's score when the button is clicked (via data)
+
+let janeBtn = document.getElementById("score-btn")
+
+janeBtn.addEventListener("click", function(){
+    console.log(data[0].score);
+})
