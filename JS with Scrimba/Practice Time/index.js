@@ -177,7 +177,7 @@ console.log( localStorage.getItem("a") );
 
 */
 
-
+/*
 //S6L4 addEventListener and object in array
 
 let data = [
@@ -200,3 +200,31 @@ let janeBtn = document.getElementById("score-btn")
 janeBtn.addEventListener("click", function(){
     console.log(data[0].score);
 })
+*/
+
+//S6L5 Generate sentence
+
+// The generateSentence(desc, arr) takes two parameterer: a description and an array.
+// It should return a string based upon the description and array.
+
+// Example 1: if you pass in "largest countries",and ["China", "India", "USA"],
+// it should return the string: "The 3 largest countries are China, India, USA"
+
+// Example 2:If you pass in "best fruits" and ["Apples", "Bananas"], it should return:
+// "The 2 best fruits are Apples, Bananas"
+
+// Use both a for loop and a template string to solve the challenge
+
+function generateSentence(desc, arr) {
+    
+    let item = []
+
+    for(let i=0; i<arr.length; i++) {
+        item.push(arr[i])
+    }
+
+    console.log(`The 3 ${desc} are ${item}`);
+    
+}
+
+generateSentence("largest countries", ["China", "India", "USA"])
