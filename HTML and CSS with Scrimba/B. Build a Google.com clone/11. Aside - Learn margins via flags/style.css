@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+}
+
+.red {
+    background: rgb(158, 20, 20);
+    height: 100px;
+}
+
+.blue {
+    background: navy;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.green {
+    background: rgb(1, 101, 1);
+    height: 100px;
+}
