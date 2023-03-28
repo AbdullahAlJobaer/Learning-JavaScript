@@ -25,10 +25,11 @@
 }
 
 .btn {
-    display: block;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    
+    margin-top: 18px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
 
     padding-top: 8px;
     padding-bottom: 8px;
@@ -36,10 +37,13 @@
     padding-right: 15px;
 
     background: #dfe1e5;
-
     font-size: 14px;
-    color: black;
 
     border: none;
     border-radius: 5px;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
 }
