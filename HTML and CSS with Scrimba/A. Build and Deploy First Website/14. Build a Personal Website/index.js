@@ -85,4 +85,3 @@ function favouriteFruit(theme) {
         setProp('--dark', "#222222")
     } 
 }
-
