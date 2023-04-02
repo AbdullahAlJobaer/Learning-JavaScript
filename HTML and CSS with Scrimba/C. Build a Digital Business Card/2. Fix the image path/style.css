@@ -14,8 +14,7 @@ body {
     margin-right: auto;
     justify-content: space-around;
     text-align: center;
-}
-
-.dotted-blue {
-    border: 1px dotted #175ac5;
+    color: #2b2839;
+    background: #ddebf8;
+    border-bottom: 10px solid #d5f8a5;s
 }
