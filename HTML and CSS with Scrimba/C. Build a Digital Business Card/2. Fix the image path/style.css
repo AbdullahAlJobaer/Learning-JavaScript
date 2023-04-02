@@ -1,14 +1,19 @@
 body {
     margin: 20px;
+    
 }
 
 .avatar {
     width: 150px;
+   
 }
 
 .card {
-    border: 1px dotted #0000ff;
+    
     padding: 20px;
     display: flex;
 }
 
+.dotted-blue {
+    border: 1px dotted #175ac5;
+}
