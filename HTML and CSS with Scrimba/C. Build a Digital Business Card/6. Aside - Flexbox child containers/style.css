@@ -1,0 +1,8 @@
+.pricing {
+    display: flex;
+}
+
+.box-1, .box-2 {
+    padding: 10px;
+}
+
