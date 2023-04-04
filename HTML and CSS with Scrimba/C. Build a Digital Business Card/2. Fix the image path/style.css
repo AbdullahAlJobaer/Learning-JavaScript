@@ -1,5 +1,6 @@
 body {
     margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .avatar {
@@ -16,5 +17,5 @@ body {
     text-align: center;
     color: #2b2839;
     background: #ddebf8;
-    border-bottom: 10px solid #d5f8a5;s
+    border-bottom: 10px solid #d5f8a5;
 }
