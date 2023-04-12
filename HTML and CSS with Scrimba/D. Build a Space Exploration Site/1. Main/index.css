@@ -12,3 +12,7 @@ body {
     border: none;
     font-family: inherit;
 }
+
+.exp {
+    border-bottom: 5px solid white;
+}
