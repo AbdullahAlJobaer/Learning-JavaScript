@@ -16,3 +16,7 @@ body {
 .exp {
     border-bottom: 5px solid white;
 }
+
+#logo {
+    width: 120px;
+}
