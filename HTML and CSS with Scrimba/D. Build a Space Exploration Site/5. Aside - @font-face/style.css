@@ -1,0 +1,18 @@
+@font-face {
+    src: url("CombackHomeRegular-jEMd9.ttf");
+    font-family: spidermanCBH;
+}
+
+@font-face {
+    src: url("Spiderman.ttf");
+    font-family: spider-man;
+}
+
+h1 {
+    font-family: spidermanCBH;
+}
+
+p {
+    font-family: spider-man;
+    font-size: 50px;
+}
