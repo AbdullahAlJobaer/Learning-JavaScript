@@ -1,5 +1,5 @@
 body {
-    color: white;
+    color: #D9C4AE;
     background-image: url("Images/galaxy.webp");
     background-size: cover;
     text-align: center;
@@ -8,13 +8,16 @@ body {
 
 .apply-btn {
     padding: 5px 10px;
-    background-color: white;
+    color: #000000;
+    background-color: #E86E65;
     border: none;
     font-family: inherit;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 .exp {
-    border-bottom: 5px solid white;
+    border-bottom: 5px solid #D9C4AE;
 }
 
 #logo {
