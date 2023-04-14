@@ -8,12 +8,18 @@ body {
 
 .apply-btn {
     padding: 5px 10px;
-    color: #000000;
-    background-color: #E86E65;
+    color:#D9C4AE;
+    background-color: #a6463f;
     border: none;
     font-family: inherit;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 800;
+    
+}
+
+.apply-btn:active {
+    color: #000000;
+    transform: translateY(3px);
 }
 
 .exp {
