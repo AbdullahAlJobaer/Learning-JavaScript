@@ -34,3 +34,8 @@ body {
     background-size: cover;
     padding: 10px 0 200px 0;
 }
+
+#tnc {
+    color: #231B3A;
+    text-shadow: 1px 1px 4px #322538;
+}
