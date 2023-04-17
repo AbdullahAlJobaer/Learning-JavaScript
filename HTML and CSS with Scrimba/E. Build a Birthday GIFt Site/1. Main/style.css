@@ -1,0 +1,9 @@
+body {
+    font-family: 'Happy Monkey', cursive;
+    text-align: center;
+}
+
+#pic {
+    border-radius: 50%;
+    width: 200px;
+}
