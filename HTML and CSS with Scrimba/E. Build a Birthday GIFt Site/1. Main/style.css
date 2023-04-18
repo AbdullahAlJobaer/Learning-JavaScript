@@ -3,7 +3,17 @@ body {
     text-align: center;
     background: #a2d2ff;
     color: #ffffff;
+    text-shadow: 1px 1px 1px black;
 }
+
+
+/*
+
+h1, h2, h3, h4, p {
+    text-shadow: 1px 1px 1px black;
+}
+*/
+
 
 #pic {
     border-radius: 50%;
