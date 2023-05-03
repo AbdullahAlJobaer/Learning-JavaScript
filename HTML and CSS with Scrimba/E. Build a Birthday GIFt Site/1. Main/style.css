@@ -49,7 +49,12 @@ h1, h2, h3, h4, p {
 }
 
 .gift-img {
+    background-image: url("images/gift-cover.jpg");
+    background-size: cover;
+    height: 400px;
     width: 400px;
+    margin: 0 auto 0 auto;
     border: 6px solid #ffffff;
     border-radius: 10px;
+    align-items: center;
 }
