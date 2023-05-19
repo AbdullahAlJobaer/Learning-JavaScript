@@ -1,5 +1,11 @@
-let js = "amazing";
-if (js === "amazing") alert("JavaScript is FUN!");
+/*
+10 - Values and variables
 
-40 + 8 + 23 - 10;
+let js = "amazing";
+console.log("40" + "8" + "23" - "10");
 console.log(40 + 8 + 23 - 10);
+
+let firstName = "Abdullah";
+console.log(firstName);
+
+*/
