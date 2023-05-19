@@ -27,7 +27,7 @@ firstName = "ron";
 console.log(typeof firstName);
 
 console.log(typeof null);
-*/
+
 
 
 // 13 - let, const, and var
@@ -44,3 +44,4 @@ console.log(job);
 
 lastName = "Schmedtmann"; // Very bad practice of writing variables
 console.log(lastName);
+*/

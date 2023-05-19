@@ -1,4 +1,4 @@
-/* 
+/*
 Assignment - Values and variables (10)
 
 let country = "Bangladesh";
@@ -24,3 +24,14 @@ console.log(typeof population);
 console.log(typeof country);
 console.log(typeof language);
 */
+
+
+// Assignment - let, const, and var (13)
+
+const country = "Bangladesh";
+const continent = "Asia";
+let population = 169.5;
+const isIsland = false;
+const language = "Bengali";
+
+const isIsland = true;
