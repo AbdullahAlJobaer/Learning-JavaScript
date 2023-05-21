@@ -85,7 +85,7 @@ const isFullage = ageRite >= 40;
 console.log(isFullage);
 
 console.log(now - 1995 > now - 1997)
-
+*/
 
 
 
@@ -103,4 +103,4 @@ console.log(x, y);
 
 const avgAge = (ageJonas + ageSarah) / 2;
 console.log(ageJonas, ageSarah, avgAge);
-*/
+
