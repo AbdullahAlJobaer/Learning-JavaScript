@@ -45,7 +45,7 @@ console.log(job);
 
 lastName = "Schmedtmann"; // Very bad practice of writing variables
 console.log(lastName);
-*/
+
 
 
 
@@ -85,3 +85,4 @@ const isFullage = ageRite >= 40;
 console.log(isFullage);
 
 console.log(now - 1995 > now - 1997)
+*/
