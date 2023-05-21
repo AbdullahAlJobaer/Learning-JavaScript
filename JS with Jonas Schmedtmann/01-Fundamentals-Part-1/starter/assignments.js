@@ -23,7 +23,6 @@ console.log(typeof isIsland);
 console.log(typeof population);
 console.log(typeof country);
 console.log(typeof language);
-*/
 
 
 // Assignment - let, const, and var (13)
@@ -35,3 +34,4 @@ const isIsland = false;
 const language = "Bengali";
 
 const isIsland = true;
+*/
