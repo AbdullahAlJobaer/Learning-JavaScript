@@ -180,7 +180,6 @@ lines");
 console.log(`String with
 multiple
 lines`);
-*/
 
 
 
@@ -205,3 +204,4 @@ if (birthYear <= 2000) {
 }
 
 console.log(`Your birth year is ${1995}, so you're from ${century} 😎`);
+*/
