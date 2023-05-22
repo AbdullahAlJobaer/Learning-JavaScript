@@ -204,7 +204,6 @@ if (birthYear <= 2000) {
 }
 
 console.log(`Your birth year is ${1995}, so you're from ${century} 😎`);
-*/
 
 
 
@@ -219,7 +218,7 @@ YOUR TASKS:
 is either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
 2. Use a template literal to include the BMI values in the outputs. Example: "Mark's
 BMI (28.3) is higher than John's (23.9)!"
-*/
+
 
 const massMark = 78;
 const heightMark = 1.69;
@@ -235,3 +234,12 @@ if (markBMI > johnBMI) {
 } else {
     console.log(`John's BMI (${johnBMI}) is higher than Mark's BMI (${markBMI})`);
 }
+*/
+
+
+
+// 20 - Type Conversion and Coercion
+
+const inputYear = "1995";
+console.log(inputYear + 18);
+console.log((Number(inputYear)) + 18);
