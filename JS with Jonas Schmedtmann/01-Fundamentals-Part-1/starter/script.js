@@ -154,7 +154,7 @@ console.log("For TD2, John's BMI:", johnBMI2);
 
 const markHigherBMI2 = markBMI2 > johnBMI2;
 console.log(markHigherBMI2);
-*/
+
 
 
 
@@ -180,3 +180,4 @@ lines");
 console.log(`String with
 multiple
 lines`);
+*/

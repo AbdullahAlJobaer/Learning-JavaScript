@@ -57,3 +57,15 @@ console.log(population < 33);
 let description = country + " is in " + continent + ", and its " + population + " million people speak " + language;
 console.log(description);
 */
+
+
+
+// Assignment - Strings and template literals (17)
+
+let country = "Bangladesh";
+const continent = "Asia";
+const language = "Bengali";
+let population = 170;
+
+const description = `${country} is in ${continent}, and its ${population} million people speak ${language}`;
+console.log(description);
