@@ -68,7 +68,6 @@ let population = 170;
 
 const description = `${country} is in ${continent}, and its ${population} million people speak ${language}`;
 console.log(description);
-*/
 
 
 
@@ -85,3 +84,4 @@ if (population > 33) {
 }
 
 console.log(description);
+*/
