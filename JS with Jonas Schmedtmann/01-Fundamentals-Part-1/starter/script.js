@@ -106,7 +106,7 @@ console.log(ageJonas, ageSarah, avgAge);
 
 
 
-////////////////////////////////////////// 
+//////////////////////////////////////////
 /// 16 - CODING CHALLENGE #1 ////////////
 
 /*
@@ -122,7 +122,7 @@ YOUR TASKS:
 TEST DATA:
 Data 1: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95m tall.
 Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76m tall.
-*/
+
 
 // TEST DATA 1
 const massMark1 = 78;
@@ -154,3 +154,29 @@ console.log("For TD2, John's BMI:", johnBMI2);
 
 const markHigherBMI2 = markBMI2 > johnBMI2;
 console.log(markHigherBMI2);
+*/
+
+
+
+// 17 - Strings and template literals
+
+const firstName = "Robin";
+const job = "web developer";
+const birthYear = 1995;
+const now = 2023;
+
+const robin = "I'm " + firstName + ", a " + (now - birthYear) + " years old " + job + "!";
+const robinNew = `I'm ${firstName}, a ${now - birthYear} years old ${job}!`;
+
+console.log(robin);
+console.log(robinNew);
+
+console.log(`Just a regular string..`);
+
+console.log("String with\n\
+multiple\n\
+lines");
+
+console.log(`String with
+multiple
+lines`);
