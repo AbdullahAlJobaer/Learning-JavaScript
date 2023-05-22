@@ -181,3 +181,27 @@ console.log(`String with
 multiple
 lines`);
 */
+
+
+
+// 18 - Taking decisions if else statements
+
+const age = 15;
+
+if (age >= 18) {
+    console.log("Hoorray! Sarah can apply for driving license! 🚗");
+} else {
+    const yearsLeft = 18 - age;
+    console.log(`Sarah is too young. Wait another ${yearsLeft} years 🙂`);
+}
+
+let birthYear = 1995;
+let century;
+
+if (birthYear <= 2000) {
+    century = "20th century";
+} else {
+    century = "21st century";
+}
+
+console.log(`Your birth year is ${1995}, so you're from ${century} 😎`);
