@@ -237,7 +237,7 @@ if (markBMI > johnBMI) {
 */
 
 
-
+/*
 // 20 - Type Conversion and Coercion
 
 // Type conversion
@@ -264,3 +264,4 @@ console.log("12" / "2");
 let n = "1" + 1;    // 11
 n = n - 1;          // 11 - 1
 console.log(n);     // 10
+*/
