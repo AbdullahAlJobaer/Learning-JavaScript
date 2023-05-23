@@ -242,4 +242,7 @@ if (markBMI > johnBMI) {
 
 const inputYear = "1995";
 console.log(inputYear + 18);
-console.log((Number(inputYear)) + 18);
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+console.log(Number("Robin"));
+console.log(typeof NaN);
