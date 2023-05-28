@@ -264,7 +264,7 @@ console.log("12" / "2");
 let n = "1" + 1;    // 11
 n = n - 1;          // 11 - 1
 console.log(n);     // 10
-*/
+
 
 
 
@@ -295,3 +295,63 @@ if (height) {
 }
 
 
+
+// 22 - Equality operators: == vs ===
+
+const age = 18;
+
+if (age === 18) {
+    console.log("Congrates! You are an adult now (Strict)");
+}
+
+if (age == 18) {
+    console.log("Congrates! You are an adult now (loose)");
+}
+
+
+const favorite = Number(prompt("What's your favorite number?"));
+console.log(favorite);
+console.log(typeof favorite);
+
+if (favorite === 10) {
+    console.log("Cool! 10 is a cool number");
+} else if (favorite === 7) {
+    console.log("Cool! 7 is also a cool number");
+} else if (favorite === 11) {
+    console.log("Cool! 11 is also a cool number");
+} else {
+    console.log("Sadly, the Number is not 10 or 7 or 11");
+}
+
+if (favorite !== 10) {
+    console.log("Why not 10?");
+}
+*/
+
+
+
+// 24 -  Logical operators
+
+const hasDriversLicense = true;     // A
+const hasGoodVision = true;        // B
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+if (hasDriversLicense && hasGoodVision) {
+    console.log("Sara is able to drive");
+} else {
+    console.log("Someone else should drive!");
+}
+
+const isTired = false;       // C
+
+console.log(hasDriversLicense || hasGoodVision || isTired);
+
+// Sara'll be able to drive If she has a driver's license, good vision, and she isn't tired
+if (hasDriversLicense && hasGoodVision && !isTired) {
+    console.log("YAYY! Sara can drive!");
+} else {
+    console.log("Sara can't drive");
+}
