@@ -326,7 +326,6 @@ if (favorite === 10) {
 if (favorite !== 10) {
     console.log("Why not 10?");
 }
-*/
 
 
 
@@ -355,3 +354,4 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 } else {
     console.log("Sara can't drive");
 }
+*/

@@ -87,10 +87,24 @@ console.log(description);
 
 
 
-// Assignment - Type conversion and coercion
+// Assignment - Type conversion and coercion (20)
 console.log("9" - "5");                 // 4
 console.log("19" - "13" + "17");        // 617
 console.log("19" - "13" + 17);          // 23
 console.log("123" < 57);                // false
 console.log(5 + 6 + "4" + 9 - 4 - 2);   // 1143
 */
+
+
+
+// Assignment - Logical operators (24)
+const country = "Bangladesh";
+const language = "Bengali";
+const population = 170;
+const isIsland = false;
+
+if (language === "English" && population < 50 && isIsland === true) {
+    console.log(`Sara should live in ${country}`);
+} else {
+    console.log(`${country} does not meet Sara's criteria`);
+}
