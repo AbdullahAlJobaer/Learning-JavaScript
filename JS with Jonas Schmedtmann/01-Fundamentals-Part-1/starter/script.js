@@ -449,4 +449,19 @@ if (day === "monday") {
 
 
 
-// 27 - Statements and expressions
+// 28 - The conditional (Ternary) operator
+
+const age = 17;
+age >= 18 ? console.log("I want to drink wine 🍷") : console.log("I like to have water 💧");
+
+const drink = age >= 18 ? "wine 🍷" : "water 💧";
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+    drink2 = "Give wine 🍷";
+} else {
+    drink2 = "Give water 💧";
+}
+
+console.log(`I like to drink ${age >= 18 ? "wine 🍷" : "water 💧"} `);
