@@ -397,7 +397,7 @@ if (dolphinsAVG > koalasAVG && dolphinsAVG >= 100) {
 } else {
     console.log("No team qualifies for the trophy 😐");
 }
-*/
+
 
 
 
@@ -445,3 +445,4 @@ if (day === "monday") {
 } else {
     console.log("Not a valid day input 😏");
 }
+*/
