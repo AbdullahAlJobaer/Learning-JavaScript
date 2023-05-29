@@ -107,7 +107,6 @@ if (language === "English" && population < 50 && isIsland === true) {
 } else {
     console.log(`${country} does not meet Sara's criteria`);
 }
-*/
 
 
 
@@ -135,3 +134,4 @@ switch (language) {
     default:
         console.log("Great language too 😃");
 }
+*/

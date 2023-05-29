@@ -446,3 +446,7 @@ if (day === "monday") {
     console.log("Not a valid day input 😏");
 }
 */
+
+
+
+// 27 - Statements and expressions
