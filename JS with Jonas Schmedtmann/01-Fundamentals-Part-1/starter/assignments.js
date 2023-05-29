@@ -134,7 +134,7 @@ switch (language) {
     default:
         console.log("Great language too 😃");
 }
-*/
+
 
 
 
@@ -145,3 +145,4 @@ const population = 170;
 const str = `${country}'s population is ${population > 33 ? "above" : "below"} average`;
 
 console.log(str);
+*/
