@@ -383,6 +383,7 @@ TEST DATA:
 § Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 */
 
+/*
 const dolphinsAVG = (97 + 112 + 101) / 3;
 
 const koalasAVG = (109 + 95 + 106) / 3;
@@ -395,4 +396,52 @@ if (dolphinsAVG > koalasAVG && dolphinsAVG >= 100) {
     console.log("Both teams win the trophy 🏆🏆");
 } else {
     console.log("No team qualifies for the trophy 😐");
+}
+*/
+
+
+
+// 26 - The switch statement
+
+const day = prompt("Which day is it?");
+
+switch (day) {
+    case "monday":
+        console.log("Plan course structure");
+        console.log("Go to coding meetup");
+        break;
+    case "tuesday":
+        console.log("Prepare theory videos");
+        break;
+    case "wednesday":
+    case "thursday":
+        console.log("Write code examples");
+        break;
+    case "friday":
+        console.log("Record videos");
+        break;
+    case "saturday":
+    case "sunday":
+        console.log("Enjoy the weekend 😎 You've earned it!");
+        break;
+    default:
+        console.log("Not a valid day input 😏")
+}
+
+
+// Challenge: Tranform the above example into if-else statement
+
+if (day === "monday") {
+    console.log("Plan course structure");
+    console.log("Go to coding meetup");
+} else if (day === "tuesday") {
+    console.log("Prepare theory videos");
+} else if (day === "wednesday" || day === "thursday") {
+    console.log("Write code examples");
+} else if (day === "friday") {
+    console.log("Record videos");
+} else if (day === "saturday" || day === "sunday") {
+    console.log("Enjoy the weekend 😎 you've earned it");
+} else {
+    console.log("Not a valid day input 😏");
 }
