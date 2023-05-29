@@ -445,7 +445,6 @@ if (day === "monday") {
 } else {
     console.log("Not a valid day input 😏");
 }
-*/
 
 
 
@@ -465,3 +464,4 @@ if (age >= 18) {
 }
 
 console.log(`I like to drink ${age >= 18 ? "wine 🍷" : "water 💧"} `);
+*/

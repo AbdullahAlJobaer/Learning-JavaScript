@@ -135,3 +135,13 @@ switch (language) {
         console.log("Great language too 😃");
 }
 */
+
+
+
+// Assignment - The conditional (ternary) operator (28)
+
+const country = "Bangladesh";
+const population = 170;
+const str = `${country}'s population is ${population > 33 ? "above" : "below"} average`;
+
+console.log(str);
