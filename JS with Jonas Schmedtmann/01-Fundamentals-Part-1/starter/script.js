@@ -468,7 +468,6 @@ console.log(`I like to drink ${age >= 18 ? "wine 🍷" : "water 💧"} `);
 
 
 
-
 //////////////////////////////////////////
 /// 29 - CODING CHALLENGE #4 ////////////
 
@@ -489,8 +488,10 @@ operator!)
 TEST DATA:
 § Data 1: Test for bill values 275, 40 and 430
 
-*/
+
 
 const bill = Number(prompt("How much is your bill?"))
 const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20;
 console.log(`The bill was ${bill}, the tip was ${tip}, and the total value was ${bill + tip}`);
+*/
+
