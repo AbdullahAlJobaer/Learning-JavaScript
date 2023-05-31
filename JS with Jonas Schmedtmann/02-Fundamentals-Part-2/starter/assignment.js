@@ -45,7 +45,7 @@ const descBangladesh2 = percentageOfWorld2("Bangladesh", 170);
 console.log(descBangladesh2);
 const descIndia2 = percentageOfWorld2("India", 1408);
 console.log(descIndia2);
-*/
+
 
 
 
@@ -62,3 +62,4 @@ const descBangladesh3 = percentageOfWorld3("Bangladesh", 170);
 console.log(descBangladesh3);
 const descIndia3 = percentageOfWorld3("India", 1408);
 console.log(descIndia3);
+*/
