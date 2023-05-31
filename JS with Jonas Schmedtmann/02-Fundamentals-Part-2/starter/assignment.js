@@ -14,7 +14,7 @@ const descBangladesh = describeCountry("Bangladesh", 170, "Dhaka");
 console.log(descFinland);
 console.log(descSpain);
 console.log(descBangladesh);
-*/
+
 
 
 
@@ -45,3 +45,4 @@ const descBangladesh2 = percentageOfWorld2("Bangladesh", 170);
 console.log(descBangladesh2);
 const descIndia2 = percentageOfWorld2("India", 1408);
 console.log(descIndia2);
+*/
