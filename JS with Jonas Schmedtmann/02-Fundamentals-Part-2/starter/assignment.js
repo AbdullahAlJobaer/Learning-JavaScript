@@ -18,7 +18,7 @@ console.log(descBangladesh);
 
 
 
-// Assignment - Function declarations vs. expressions
+// Assignment - Function declarations vs. expressions (34)
 
 // Function declaration
 function percentageOfWorld1(country, population) {
@@ -46,3 +46,19 @@ console.log(descBangladesh2);
 const descIndia2 = percentageOfWorld2("India", 1408);
 console.log(descIndia2);
 */
+
+
+
+// Assignment - Arrow functions (35)
+
+const percentageOfWorld3 = (country, population) => {
+    const calcPercentage = ((population / 7900) * 100).toFixed(1);
+    return `${country} has ${population} million people, so it's about ${calcPercentage}% of world population.`;
+}
+
+const descChina3 = percentageOfWorld3("China", 1441);
+console.log(descChina3);
+const descBangladesh3 = percentageOfWorld3("Bangladesh", 170);
+console.log(descBangladesh3);
+const descIndia3 = percentageOfWorld3("India", 1408);
+console.log(descIndia3);
