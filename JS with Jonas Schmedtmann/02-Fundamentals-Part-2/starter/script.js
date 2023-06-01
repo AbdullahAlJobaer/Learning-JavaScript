@@ -164,23 +164,24 @@ TEST DATA:
 
 const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
 
-const dolphinsFinal = calcAverage(85, 54, 41);
-const KoalasFinal = calcAverage(23, 34, 27);
+// Test Data 1
+const dolphinsTD1 = calcAverage(44, 23, 71);
+const KoalasTD1 = calcAverage(65, 54, 49);
+
+// Test Data 2
+const dolphinsTD2 = calcAverage(85, 54, 41);
+const KoalasTD2 = calcAverage(23, 34, 27);
 
 function checkWinner(avgDolphins, avgKoalas) {
 
     if (avgDolphins >= avgKoalas * 2) {
-        return `Dolphins win (${avgDolphins} vs. ${avgKoalas})`;
+        return `Dolphins win 🏆 (${avgDolphins} vs. ${avgKoalas})`;
     } else if (avgKoalas >= avgDolphins * 2) {
-        return `Koalas win (${avgKoalas} vs. ${avgDolphins})`;
+        return `Koalas win 🏆 (${avgKoalas} vs. ${avgDolphins})`;
     } else {
-        return `No team wins`;
+        return `No team wins 🥱`;
     }
 }
 
-console.log(checkWinner(dolphinsFinal, KoalasFinal));
-
-
-// dolphinResult > koalasResult * 2
-
-
+console.log("For test data 1:\n\n", checkWinner(dolphinsTD1, KoalasTD1));
+console.log("For test data 2:\n\n", checkWinner(dolphinsTD2, KoalasTD2));
