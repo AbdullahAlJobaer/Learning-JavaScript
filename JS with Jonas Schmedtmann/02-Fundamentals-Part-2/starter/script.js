@@ -185,7 +185,7 @@ function checkWinner(avgDolphins, avgKoalas) {
 
 console.log("For test data 1:\n\n", checkWinner(dolphinsTD1, KoalasTD1));
 console.log("For test data 2:\n\n", checkWinner(dolphinsTD2, KoalasTD2));
-*/
+
 
 
 
@@ -225,3 +225,4 @@ console.log(age1, age3);
 
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[2]), calcAge(years[years.length - 1])];
 console.log(ages);
+*/

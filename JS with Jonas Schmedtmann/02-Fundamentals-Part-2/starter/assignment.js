@@ -82,3 +82,23 @@ console.log(describePopulation("China", 1441));
 console.log(describePopulation("Bangladesh", 170));
 console.log(describePopulation("India", 1408));
 */
+
+
+
+// Assignment - Introduction to arrays (39)
+
+const populations = [170, 1441, 1408, 47];
+console.log("The array has 4 elements?", populations.length === 4);
+
+function percentageOfWorld1(population) {
+    return ((population / 7900) * 100).toFixed(1);
+}
+
+const percentages = [
+    percentageOfWorld1(populations[0]),
+    percentageOfWorld1(populations[1]),
+    percentageOfWorld1(populations[2]),
+    percentageOfWorld1(populations[3])
+];
+
+console.log(percentages);
