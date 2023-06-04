@@ -343,7 +343,7 @@ const robinObject = {
     lastName: "Jobaer",
     age: 2023 - 1995,
     job: "Web Developer",
-    friends: ["Robin", "Shihab", "Oshim"]
+    friends: ["Goku", "Shihab", "Oshim"]
 };
 
 const namekey = "Name";
@@ -356,4 +356,18 @@ console.log(robinObject["lastName"]);
 console.log(robinObject["last" + namekey]);
 
 const interestedIn = prompt("What do you want to know about Robin? Choose between firstName, lastName, age, job, friends");
-console.log(robinObject[interestedIn]);
+
+if (robinObject[interestedIn]) {
+    console.log(robinObject[interestedIn]);
+} else {
+    console.log("Wrong request! Choose between firstName, lastName, age, job, friends");
+}
+
+robinObject.location = "Bangladesh";
+robinObject["twitter"] = "@RobJobaer";
+console.log(robinObject);
+
+// CHALLENGE
+// "Robin has 3 friends, and his best friend is called Goku"
+
+console.log(`${robinObject.firstName} has ${robinObject.friends.length} friends, and his best friend is called ${robinObject.friends[0]}`);
