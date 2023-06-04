@@ -103,3 +103,20 @@ const percentages = [
 
 console.log(percentages);
 */
+
+
+
+// Assignment - Basic array operations (Methods) (35)
+
+const neighbours = ["India", "Pakistan", "Srilanka"];
+neighbours.push("Utopia");
+console.log(neighbours);
+neighbours.pop();
+console.log(neighbours);
+
+if (!neighbours.includes("Germany")) {
+    console.log("Probably not a central European country :D");
+}
+
+neighbours[(neighbours.indexOf("Pakistan"))] = "Republic of Pakistan";
+console.log(neighbours);
