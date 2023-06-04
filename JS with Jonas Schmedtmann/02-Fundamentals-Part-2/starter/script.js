@@ -226,3 +226,48 @@ console.log(age1, age3);
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[2]), calcAge(years[years.length - 1])];
 console.log(ages);
 */
+
+
+
+// 35 - Basic array operations (Methods)
+
+// push() - add elements at the end
+const friends = ["Robin", "Shihab", "Oshim"];
+const friendsLength = friends.push("Siam");     // push() returns the length of a new array
+console.log(friends);
+console.log(friendsLength);
+
+// unshift() - add elements at the start
+friends.unshift("Limon");
+console.log(friends);
+
+// Remove elements
+const poppedSiam = friends.pop();      // removes last element
+console.log(friends);
+console.log(poppedSiam);
+const poppedOshim = friends.pop();
+console.log(friends);
+console.log(poppedOshim);
+
+const poppedLimon = friends.shift();   // removes first element
+console.log(friends);
+console.log(poppedLimon);
+
+// indexOf() - to show the index numnber of an element
+console.log(friends.indexOf("Shihab"));
+console.log(friends.indexOf("Oshim"));
+console.log(friends.indexOf("Apu"));
+
+// includes() - shows boolean value if the element is present of not
+console.log(friends.includes("Siam"));
+console.log(friends.includes("Robin"));
+friends.push(21);
+console.log(friends.includes("21"));    // false, because includes() doesn't do type coercion
+console.log(friends.includes(21));      // true
+
+
+if (friends.includes("Apu")) {
+    console.log("Yes, you have a friend called Apu");
+} else {
+    console.log("Friend called Apu not found!");
+}

@@ -81,7 +81,7 @@ function describePopulation(country, population) {
 console.log(describePopulation("China", 1441));
 console.log(describePopulation("Bangladesh", 170));
 console.log(describePopulation("India", 1408));
-*/
+
 
 
 
@@ -102,3 +102,4 @@ const percentages = [
 ];
 
 console.log(percentages);
+*/
