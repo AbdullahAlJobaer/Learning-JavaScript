@@ -121,3 +121,23 @@ if (!neighbours.includes("Germany")) {
 neighbours[(neighbours.indexOf("Pakistan"))] = "Republic of Pakistan";
 console.log(neighbours);
 */
+
+
+
+// Assignment - Introduction to Objects (36)
+
+/*
+1. Create an object called 'myCountry' for a country of your choice, containing
+properties 'country', 'capital', 'language', 'population' and
+'neighbours' (an array like we used in previous assignments)
+*/
+
+const myCountry = {
+    country: "Bangladesh",
+    capital: "Dhaka",
+    language: "Bengali",
+    population: 170,
+    neighbours: ["India", "Pakistan", "Srilanka"]
+};
+
+console.log(myCountry);
