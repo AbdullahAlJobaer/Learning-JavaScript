@@ -201,7 +201,7 @@ console.log(friends[2]);
 console.log(friends.length);
 console.log(friends[friends.length - 1]);
 
-friends[2] = "Limon";    // All primitive values are immutable, array isn't primitive value 
+friends[2] = "Limon";    // All primitive values are immutable, array isn't primitive value
 console.log(friends);
 
 const firstName = "Robin";
@@ -295,7 +295,7 @@ the function you created before
 4. Bonus: Create an array 'total' containing the total values, so the bill + tip
 
 TEST DATA: 125, 555 and 44
-*/
+
 
 function calcTip(bill) {
     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20;
@@ -307,3 +307,28 @@ console.log(tips);
 
 const total = [(bills[0] + tips[0]), (bills[1] + tips[1]), (bills[2] + tips[2])];
 console.log(bills, tips, total);
+*/
+
+
+
+// 36 - Introduction to Objects
+
+const robinArray = [
+    "Robin",
+    "Jobaer",
+    2023 - 1995,
+    "Web Developer",
+    ["Robin", "Shihab", "Oshim"]
+];
+
+console.log(robinArray);
+
+const robinObject = {
+    firstName: "Robin",
+    lastName: "Jobaer",
+    age: 2023 - 1995,
+    job: "Web Developer",
+    friends: ["Robin", "Shihab", "Oshim"]
+};
+
+console.log(robinObject.friends);
