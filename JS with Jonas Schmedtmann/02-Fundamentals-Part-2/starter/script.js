@@ -333,3 +333,27 @@ const robinObject = {
 
 console.log(robinObject.friends);
 */
+
+
+
+// 37 - Dot vs Bracket Notation
+
+const robinObject = {
+    firstName: "Robin",
+    lastName: "Jobaer",
+    age: 2023 - 1995,
+    job: "Web Developer",
+    friends: ["Robin", "Shihab", "Oshim"]
+};
+
+const namekey = "Name";
+
+// Dot notation
+console.log(robinObject.lastName);
+
+// Bracket notation
+console.log(robinObject["lastName"]);
+console.log(robinObject["last" + namekey]);
+
+const interestedIn = prompt("What do you want to know about Robin? Choose between firstName, lastName, age, job, friends");
+console.log(robinObject[interestedIn]);
