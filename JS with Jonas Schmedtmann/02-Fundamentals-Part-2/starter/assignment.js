@@ -102,7 +102,7 @@ const percentages = [
 ];
 
 console.log(percentages);
-*/
+
 
 
 
@@ -120,3 +120,4 @@ if (!neighbours.includes("Germany")) {
 
 neighbours[(neighbours.indexOf("Pakistan"))] = "Republic of Pakistan";
 console.log(neighbours);
+*/
