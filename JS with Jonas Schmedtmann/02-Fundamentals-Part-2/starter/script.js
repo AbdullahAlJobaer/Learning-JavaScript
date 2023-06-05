@@ -332,7 +332,7 @@ const robinObject = {
 };
 
 console.log(robinObject.friends);
-*/
+
 
 
 
@@ -371,3 +371,4 @@ console.log(robinObject);
 // "Robin has 3 friends, and his best friend is called Goku"
 
 console.log(`${robinObject.firstName} has ${robinObject.friends.length} friends, and his best friend is called ${robinObject.friends[0]}`);
+*/
