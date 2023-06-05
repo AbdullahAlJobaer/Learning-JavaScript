@@ -371,7 +371,7 @@ console.log(robinObject);
 // "Robin has 3 friends, and his best friend is called Goku"
 
 console.log(`${robinObject.firstName} has ${robinObject.friends.length} friends, and his best friend is called ${robinObject.friends[0]}`);
-*/
+
 
 
 
@@ -416,3 +416,4 @@ console.log(robin.age);
 // "Robin is a 46-year old teacher, and he has a/no driver's license"
 
 console.log(robin.getSummary());
+*/
