@@ -372,3 +372,47 @@ console.log(robinObject);
 
 console.log(`${robinObject.firstName} has ${robinObject.friends.length} friends, and his best friend is called ${robinObject.friends[0]}`);
 */
+
+
+
+// 38 - Object methods
+
+const robin = {
+    firstName: "Robin",
+    lastName: "Jobaer",
+    birthYear: 1995,
+    job: "web developer",
+    friends: ["Goku", "Shihab", "Oshim"],
+    hasDriversLicense: false,
+
+    // calcAge: function (birthYear) {
+    //     return 2023 - birthYear;
+    // }
+
+    // calcAge: function () {
+    //     return 2023 - this.birthYear;
+    // }
+
+    calcAge: function () {
+        this.age = 2023 - this.birthYear;
+        return this.age;
+    },
+
+    getSummary: function () {
+        return `${this.firstName} is a ${this.calcAge()} old ${this.job}, and he has ${this.hasDriversLicense ? "a" : "no"} driver's license.`;
+    }
+};
+
+// console.log(robin.calcAge(1995));
+// console.log(robin.calcAge(robin.birthYear));
+// console.log(robin["calcAge"](1995));
+
+console.log(robin.calcAge());
+
+console.log(robin.age);
+
+
+// CHALLENGE
+// "Robin is a 46-year old teacher, and he has a/no driver's license"
+
+console.log(robin.getSummary());
