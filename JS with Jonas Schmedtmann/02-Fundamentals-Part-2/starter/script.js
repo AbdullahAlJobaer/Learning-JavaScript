@@ -473,7 +473,7 @@ if (mark.bmi > john.bmi) {
 } else {
     console.log(`${mark.fullName}'s BMI (${mark.bmi}) is as same as ${john.fullName}'s BMI (${john.bmi})`);
 }
-*/
+
 
 
 
@@ -483,3 +483,4 @@ if (mark.bmi > john.bmi) {
 for (let rep = 1; rep <= 10; rep++) {
     console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
 }
+*/
