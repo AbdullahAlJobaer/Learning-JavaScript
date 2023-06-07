@@ -484,3 +484,24 @@ for (let rep = 1; rep <= 10; rep++) {
     console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
 }
 */
+
+
+
+// 47 - Looping arrays, breaking and continuing
+
+const robinArray = [
+    "Robin",
+    "Jobaer",
+    2023 - 1995,
+    "Web Developer",
+    ["Robin", "Shihab", "Oshim"]
+];
+
+for (let i = 0; i < robinArray.length; i++) {
+    console.log(robinArray[i]);
+}
+
+
+for (let i = 0; i < robinArray.length; i++) {
+    console.log();
+}
