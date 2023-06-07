@@ -505,7 +505,7 @@ for (let i = 0; i < robinArray.length; i++) {
 
     // Filling types array
     // types[i] = typeof robinArray[i];
-    types.push(typeof robinArray[i]);
+    types.push(typeof robinArray[i]);   // appropriate method
 }
 
 console.log(types);
