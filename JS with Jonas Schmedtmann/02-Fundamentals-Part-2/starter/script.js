@@ -497,11 +497,15 @@ const robinArray = [
     ["Robin", "Shihab", "Oshim"]
 ];
 
-for (let i = 0; i < robinArray.length; i++) {
-    console.log(robinArray[i]);
-}
-
+const types = [];
 
 for (let i = 0; i < robinArray.length; i++) {
-    console.log();
+    // Reading from robinArray
+    console.log(robinArray[i], typeof robinArray[i]);
+
+    // Filling types array
+    // types[i] = typeof robinArray[i];
+    types.push(typeof robinArray[i]);
 }
+
+console.log(types);
