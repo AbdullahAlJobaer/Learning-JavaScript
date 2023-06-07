@@ -538,7 +538,7 @@ for (let i = 0; i < robinArray.length; i++) {
     }
     console.log(robinArray[i], typeof robinArray[i]);
 }
-*/
+
 
 
 
@@ -552,7 +552,7 @@ const robinArray = [
     ["Robin", "Shihab", "Oshim"]
 ];
 
-for (let i = robinArray.length - 1; i >= 0; i--) { // i =  - 1
+for (let i = robinArray.length - 1; i >= 0; i--) {
     console.log(i, robinArray[i]);
 }
 
@@ -562,3 +562,4 @@ for (let exercise = 1; exercise <= 3; exercise++) {
         console.log(`Exercise ${exercise} repetition ${rep} 🏋️‍♀️`);
     }
 }
+*/
