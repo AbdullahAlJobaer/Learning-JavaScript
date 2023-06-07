@@ -509,3 +509,32 @@ for (let i = 0; i < robinArray.length; i++) {
 }
 
 console.log(types);
+
+const years = [1995, 1989, 1996, 1997];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2023 - years[i]);
+}
+
+console.log(ages);
+
+// CONTINUE statement
+console.log("--- ONLY STRINGS ----");
+
+for (let i = 0; i < robinArray.length; i++) {
+    if (typeof robinArray[i] !== "string") {
+        continue;
+    }
+    console.log(robinArray[i], typeof robinArray[i]);
+}
+
+// BREAK statement
+console.log("--- breaks with number ----");
+
+for (let i = 0; i < robinArray.length; i++) {
+    if (typeof robinArray[i] === 'number') {
+        break;
+    }
+    console.log(robinArray[i], typeof robinArray[i]);
+}
