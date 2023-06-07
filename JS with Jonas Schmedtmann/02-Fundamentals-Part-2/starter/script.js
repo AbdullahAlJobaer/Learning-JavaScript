@@ -483,7 +483,7 @@ if (mark.bmi > john.bmi) {
 for (let rep = 1; rep <= 10; rep++) {
     console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
 }
-*/
+
 
 
 
@@ -538,3 +538,4 @@ for (let i = 0; i < robinArray.length; i++) {
     }
     console.log(robinArray[i], typeof robinArray[i]);
 }
+*/
