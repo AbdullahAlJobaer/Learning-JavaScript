@@ -539,3 +539,26 @@ for (let i = 0; i < robinArray.length; i++) {
     console.log(robinArray[i], typeof robinArray[i]);
 }
 */
+
+
+
+// 48 - Looping backwards and loops in loops
+
+const robinArray = [
+    "Robin",
+    "Jobaer",
+    2023 - 1995,
+    "Web Developer",
+    ["Robin", "Shihab", "Oshim"]
+];
+
+for (let i = robinArray.length - 1; i >= 0; i--) { // i =  - 1
+    console.log(i, robinArray[i]);
+}
+
+for (let exercise = 1; exercise <= 3; exercise++) {
+    console.log(`----STARTING EXERCISE ${exercise}----`);
+    for (let rep = 1; rep <= 3; rep++) {
+        console.log(`Exercise ${exercise} repetition ${rep} 🏋️‍♀️`);
+    }
+}
