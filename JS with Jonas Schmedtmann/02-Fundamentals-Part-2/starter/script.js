@@ -562,7 +562,7 @@ for (let exercise = 1; exercise <= 3; exercise++) {
         console.log(`Exercise ${exercise} repetition ${rep} 🏋️‍♀️`);
     }
 }
-*/
+
 
 
 
@@ -587,3 +587,4 @@ while (dice !== 6) {
         console.log(`You rolled a: ${dice}! --LOOP ENDS--`);
     }
 }
+*/
