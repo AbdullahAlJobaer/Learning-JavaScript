@@ -16,6 +16,7 @@ console.log(population);
 
 
 
+
 // Assignment - Data types (12)
 
 1. Declare a variable called 'isIsland' and set its value according to your
@@ -35,6 +36,7 @@ console.log(typeof isIsland);
 console.log(typeof population);
 console.log(typeof country);
 console.log(typeof language);
+
 
 
 
@@ -89,6 +91,7 @@ console.log(description);
 
 
 
+
 // Assignment - Strings and template literals (17)
 
 1. Recreate the 'description' variable from the last assignment, this time
@@ -102,6 +105,7 @@ let population = 170;
 
 const description = `${country} is in ${continent}, and its ${population} million people speak ${language}`;
 console.log(description);
+
 
 
 
@@ -129,6 +133,7 @@ console.log(description);
 
 
 
+
 // Assignment - Type conversion and coercion (20)
 
 1. Predict the result of these 5 operations without executing them:
@@ -145,6 +150,36 @@ console.log("19" - "13" + "17");        // 617
 console.log("19" - "13" + 17);          // 23
 console.log("123" < 57);                // false
 console.log(5 + 6 + "4" + 9 - 4 - 2);   // 1143
+
+
+
+
+// Assignment - Equality Operators: == vs. === (22)
+
+1. Declare a variable 'numNeighbours' based on a prompt input like this:
+prompt('How many neighbour countries does your country
+have?');
+2. If there is only 1 neighbour, log to the console 'Only 1 border!' (use loose equality == for now)
+3. Use an else-if block to log 'More than 1 border' in case 'numNeighbours' is greater than 1
+4. Use an else block to log 'No borders' (this block will be executed when
+'numNeighbours' is 0 or any other value)
+5. Test the code with different values of 'numNeighbours', including 1 and 0.
+6. Change == to ===, and test the code again, with the same values of
+'numNeighbours'. Notice what happens when there is exactly 1 border! Why is this happening?
+7. Finally, convert 'numNeighbours' to a number, and watch what happens now when you input 1
+8. Reflect on why we should use the === operator and type conversion in this situation
+
+
+const numNeighbours = Number(prompt("How many neighbour countries does your country have?"));
+
+if (numNeighbours === 1) {
+    console.log("Only 1 border!");
+} else if (numNeighbours > 1) {
+    console.log("More than 1 border");
+} else {
+    console.log("No borders!");
+}
+
 
 
 
@@ -173,6 +208,7 @@ if (language === "English" && population < 50 && isIsland === true) {
 } else {
     console.log(`${country} does not meet Sara's criteria`);
 }
+
 
 
 
@@ -229,31 +265,3 @@ const str = `${country}'s population is ${population > 33 ? "above" : "below"} a
 
 console.log(str);
 */
-
-
-// Assignment - Equality Operators: == vs. === (22)
-
-/*
-1. Declare a variable 'numNeighbours' based on a prompt input like this:
-prompt('How many neighbour countries does your country
-have?');
-2. If there is only 1 neighbour, log to the console 'Only 1 border!' (use loose equality == for now)
-3. Use an else-if block to log 'More than 1 border' in case 'numNeighbours' is greater than 1
-4. Use an else block to log 'No borders' (this block will be executed when
-'numNeighbours' is 0 or any other value)
-5. Test the code with different values of 'numNeighbours', including 1 and 0.
-6. Change == to ===, and test the code again, with the same values of
-'numNeighbours'. Notice what happens when there is exactly 1 border! Why is this happening?
-7. Finally, convert 'numNeighbours' to a number, and watch what happens now when you input 1
-8. Reflect on why we should use the === operator and type conversion in this situation
-*/
-
-const numNeighbours = Number(prompt("How many neighbour countries does your country have?"));
-
-if (numNeighbours === 1) {
-    console.log("Only 1 border!");
-} else if (numNeighbours > 1) {
-    console.log("More than 1 border");
-} else {
-    console.log("No borders!");
-}
