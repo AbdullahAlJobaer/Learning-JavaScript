@@ -51,7 +51,6 @@ Use the BMI example from Challenge #1, and the code you already wrote, and impro
 
 Example: "Mark's BMI (28.3) is higher than John's (23.9)!" or "John's BMI (29.1) is 
 higher than Mark's (27)!".
-*/
 
 const massMark = 78;
 const heightMark = 1.69;
@@ -66,4 +65,73 @@ if (BMIMark > BMIJohn) {
     console.log(`Mark's BMI ${BMIMark} is higher than John's ${BMIJohn}!`);
 } else {
     console.log(`John's BMI ${BMIJohn} is higher than Mark's ${BMIMark}!`);
+}
+*/
+
+
+
+/*
+CHALLENGE #3 (CE #3)
+
+There are two gymnastics teams: Dolphins and Koalas. They compete against each other 3 times. 
+The winner with the highest average score wins a trophy!
+
+YOUR TASKS:
+
+1. Calculate the average score for each team, using the test data included below. 
+The average score for Dolphins should be assigned to the scoreDolphins variable, and the average 
+score of Koalas should be assigned to the scoreKoalas variable.
+
+2. Compare the team's average scores to determine the winner of the competition, and print to the console:
+
+"Dolphins win the trophy" if Dolphins win, or
+
+"Koalas win the trophy" if Koalas win, or
+
+"Both win the trophy" if their average scores are equal.
+
+TEST DATA: Dolphins scored 96, 108, and 89. Koalas scored 88, 91, and 110.
+*/
+
+
+
+/*
+CHALLENGE #3
+
+There are two gymnastics teams: Dolphins and Koalas. They compete against each other 3 times.
+The winner with the highest average score wins a trophy!
+
+Your tasks:
+
+1. Calculate the average score for each team, using the test data included below. The average score 
+for Dolphins should be assigned to the scoreDolphins variable, and the average score of Koalas 
+should be assigned to the scoreKoalas variable.
+
+2. Compare the team's average scores to determine the winner of the competition, and print to the console:
+
+"Dolphins win the trophy" if Dolphins win, or
+
+"Koalas win the trophy" if Koalas win, or
+
+"Both win the trophy" if their average scores are equal.
+
+TEST DATA: Dolphins scored 96, 108, and 89. Koalas scored 88, 91, and 110.
+*/
+
+const dolphinesScore1 = 96;
+const dolphinesScore2 = 108;
+const dolphinesScore3 = 89;
+const koalasScore1 = 88;
+const koalasScore2 = 91;
+const koalasScore3 = 110;
+
+const scoreDolphins = (dolphinesScore1 + dolphinesScore2 + dolphinesScore3) / 3;
+const scoreKoalas = (koalasScore1 + koalasScore2 + koalasScore3) / 3;
+
+if (scoreDolphins > scoreKoalas) {
+    console.log("Dolphins win the trophy");
+} else if (scoreKoalas > scoreKoalas) {
+    console.log("Koalas win the trophy");
+} else {
+    console.log("Both win the trophy");
 }
