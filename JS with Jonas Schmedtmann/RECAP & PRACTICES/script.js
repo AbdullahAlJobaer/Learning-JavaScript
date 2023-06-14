@@ -117,7 +117,7 @@ should be assigned to the scoreKoalas variable.
 
 TEST DATA: Dolphins scored 96, 108, and 89. Koalas scored 88, 91, and 110.
 */
-
+/*
 const dolphinesScore1 = 96;
 const dolphinesScore2 = 108;
 const dolphinesScore3 = 89;
@@ -135,3 +135,26 @@ if (scoreDolphins > scoreKoalas) {
 } else {
     console.log("Both win the trophy");
 }
+*/
+
+
+/*
+CHALLENGE #4
+
+Steven needs a very simple tip calculator for whenever he goes to eat in a restaurant. In his country, 
+it's usual to tip 15% if the bill value is between 50 and 300. If the value is different, the tip is 20%.
+
+YOUR TASKS:
+
+Calculate the tip, depending on the bill value. Create a variable called tip for this. It's not allowed 
+to use an if...else statement (if it's easier for you, you can start with an if...else statement, 
+and then try to convert it to a ternary operator).
+
+Print a string to the console containing the bill value, the tip, and the final value (bill + tip).
+
+Example: The bill was 275, the tip was 41.25, and the total value 316.25.
+
+Note: Use the values of the bill and tip variables to construct this string. Don't hard-code them 🙂
+
+TEST DATA: Test with different bill values: 275, 40, and 430
+*/
