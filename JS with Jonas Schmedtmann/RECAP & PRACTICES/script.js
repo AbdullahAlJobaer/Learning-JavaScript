@@ -1,7 +1,7 @@
 "use strict";
 
 /*
-CHALLENGE #1 (CE #1)
+CODING EXERCISE 1
 
 Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using 
 the formula: BMI = mass / (height * height) (mass in kg and height in meters).
@@ -39,7 +39,7 @@ console.log(markHigherBMI);
 
 
 /*
-CHALLENGE #2 (CE #2)
+CODING EXERCISE 2
 
 Use the BMI example from Challenge #1, and the code you already wrote, and improve it:
 
@@ -71,7 +71,7 @@ if (BMIMark > BMIJohn) {
 
 
 /*
-CHALLENGE #3 (CE #3)
+CODING EXERCISE 3
 
 There are two gymnastics teams: Dolphins and Koalas. They compete against each other 3 times.
 The winner with the highest average score wins a trophy!
@@ -114,7 +114,7 @@ if (scoreDolphins > scoreKoalas) {
 
 
 /*
-CHALLENGE #4 (CE #4)
+CODING EXERCISE 4
 
 Steven needs a very simple tip calculator for whenever he goes to eat in a restaurant. In his country, 
 it's usual to tip 15% if the bill value is between 50 and 300. If the value is different, the tip is 20%.
@@ -144,7 +144,7 @@ console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${fin
 
 
 /*
-CHALLENGE #1 (CE #5)
+CODING EXERCISE #5
 
 Back to the two gymnastics teams, the Dolphins and the Koalas! There is a new gymnastics discipline, 
 which works differently.
@@ -173,7 +173,7 @@ of hard-coded values).
 TEST DATA 1: Dolphins scored 44, 23, and 71. Koalas scored 65, 54, and 49.
 TEST DATA 2: Dolphins scored 85, 54, and 41. Koalas scored 23, 34, and 27.
 */
-
+/*
 const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
 
 const scoreDolphins = calcAverage(85, 54, 41);
@@ -190,3 +190,4 @@ function checkWinner(avgDolphins, avgKoalas) {
 }
 
 checkWinner(scoreDolphins, scoreKoalas);
+*/
