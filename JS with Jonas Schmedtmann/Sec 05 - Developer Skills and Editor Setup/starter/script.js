@@ -6,6 +6,9 @@
 // PROBLEM EXAMPLE:
 // Project Manager: We need a function that reverses whatever we pass into it.
 
+/*
+
+///////////////////// NOT DONE!!! ////////////////////////
 
 function reverses(value) {
     if (typeof value === (!"string" || !"number" || !"array")) {
@@ -16,8 +19,8 @@ function reverses(value) {
             newString += value[i];
         }
         return newString;
-    } else if (typeof value === "number") {
-        let newNumber = "";
+    } else if (typeof value === Number) {
+        let newNumber;
         for (let i = value.length - 1; i >= 0; i--) {
             newNumber += value[i];
         }
@@ -35,3 +38,51 @@ const inputValue = prompt("Type your value:");
 
 console.log(reverses(inputValue));
 console.log(typeof (reverses(inputValue)));
+
+*/
+/*
+///////////////////////////////////////
+// 59 - Using Google, StackOverflow and MDN
+
+// PROBLEM 1:
+// We work for a company building a smart home thermometer. Our most recent task is this: 
+"Given an array of temperatures of one day, calculate the temperature amplitude. Keep in mind 
+that sometimes there might be a sensor error."
+*/
+
+const temperatures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
+
+// 1) Understanding the problem
+// - What is temp amplitude? Ans: Difference between highest and lowest temp
+// - How to compute max and min temp?
+// - What's a sensor error? And what to do?
+
+// 2) Breaking up into sub-problems
+// - How to ignore errors?
+// - Find max value in temp array
+// - Find min value in temp array
+// - Subtract min from max (amplitude) and return it
+
+// [3, 4, 7]
+
+// Calculating the max and min value
+function calcTempAmplitude(temps) {
+
+    let max = temps[0];
+    let min = temps[0];
+
+    for (let i = 0; i < temps.length; i++) {
+        const currTemp = temps[i];
+
+        if (typeof currTemp !== "number") continue;
+
+        if (currTemp > max) max = currTemp;
+        if (currTemp < min) min = currTemp;
+    }
+
+    console.log(`Max: ${max}`);
+    console.log(`Min: ${min}`);
+    return max - min;
+}
+
+console.log(calcTempAmplitude(temperatures));
