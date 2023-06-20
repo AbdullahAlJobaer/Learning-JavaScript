@@ -61,9 +61,31 @@ CHALLENGE: Returning Strings
 Make a function that will return a greeting statement that uses an input; your program should return, 
 "Hello, <name> how are you doing today?".
 */
-
+/*
 function greet(name) {
     return `Hello, ${name} how are you doing today?`
 }
 
 console.log(greet("<name>"));
+*/
+
+
+
+
+/*
+CHALLENGE: Convert a string to an array
+
+Write a function to split a string and convert it into an array of words.
+
+Examples (Input ==> Output):
+"Robin Singh" ==> ["Robin", "Singh"]
+
+"I love arrays they are my favorite" ==> ["I", "love", "arrays", "they", "are", "my", "favorite"]
+*/
+
+function stringToArray(string) {
+    let myString = string.split(" ")
+    return myString;
+}
+
+console.log(stringToArray("I love arrays they are my favorite"));
