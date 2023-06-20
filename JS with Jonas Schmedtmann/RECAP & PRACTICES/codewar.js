@@ -7,7 +7,7 @@
 /*
 CHALLENGE: Square(n) Sum
 
-Complete the square sum function so that it squares each number passed into it and then sums the 
+Complete the square sum function so that it squares each number passed into it and then sums the
 results together.
 
 For example, for [1, 2, 2] it should return 9
@@ -27,7 +27,7 @@ console.log(squareSum([1, 2, 2]));
 CHALLENGE: Convert number to reversed array of digits
 
 Convert number to reversed array of digits.
-Given a random non-negative number, you have to return the digits of this number within an array 
+Given a random non-negative number, you have to return the digits of this number within an array
 in reverse order.
 
 Example(Input => Output):
@@ -39,7 +39,7 @@ Example(Input => Output):
 // 1) Transform the numbers into an array
 // 1) Reverse the number using for loop
 // 2) Push the reversed numbers in an empty array
-
+/*
 function digitize(n) {
     let number = Array.from(String(n), Number);
     let result = [];
@@ -52,3 +52,18 @@ function digitize(n) {
 }
 
 console.log(digitize(321));
+*/
+
+
+
+/*
+CHALLENGE: Returning Strings
+Make a function that will return a greeting statement that uses an input; your program should return, 
+"Hello, <name> how are you doing today?".
+*/
+
+function greet(name) {
+    return `Hello, ${name} how are you doing today?`
+}
+
+console.log(greet("<name>"));
