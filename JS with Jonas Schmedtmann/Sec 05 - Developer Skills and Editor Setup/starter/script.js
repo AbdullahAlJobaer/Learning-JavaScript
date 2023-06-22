@@ -46,8 +46,8 @@ console.log(typeof (reverses(inputValue)));
 // 59 - Using Google, StackOverflow and MDN
 
 // PROBLEM 1:
-// We work for a company building a smart home thermometer. Our most recent task is this: 
-"Given an array of temperatures of one day, calculate the temperature amplitude. Keep in mind 
+// We work for a company building a smart home thermometer. Our most recent task is this:
+"Given an array of temperatures of one day, calculate the temperature amplitude. Keep in mind
 that sometimes there might be a sensor error."
 */
 
@@ -124,7 +124,7 @@ console.log(calcTempAmplitudeNew([3, 5, 1], [9, 0, 5]));
 
 ///////////////////////////////////////
 // 61 - Debugging with the console and breakpoints
-
+/*
 const measureKelvin = function () {
     const measurement = {
         type: "temp",
@@ -175,3 +175,46 @@ function calcTempAmplitudeBug(t1, t2) {
 
 // A) IDENTIFY
 console.log(calcTempAmplitudeBug([3, 5, 1], [9, 4, 5]));
+*/
+
+
+
+
+//////////////////////////////////////////
+/// 62 - CODING CHALLENGE #1 ////////////
+/*
+Given an array of forecasted maximum temperatures, the thermometer displays a
+string with the given temperatures. 
+
+Example: [17, 21, 23] will print "... 17ºC in 1 days ... 21ºC in 2 days ... 23ºC in 3 days ..."
+
+YOUR TASKS:
+1. Create a function 'printForecast' which takes in an array 'arr' and logs a
+string like the above to the console. Try it with both test datasets.
+2. Use the problem-solving framework: Understand the problem and break it up
+into sub-problems!
+
+TEST DATA:
+§ DATA 1: [17, 21, 23]
+§ DATA 2: [12, 5, -5, 0, 4]
+*/
+
+// USING THE PROBLEM SOLVING FRAMEWORK:
+// 1) Understanding the problem
+// - How many loops will run under the function? Ans: 1
+// - How to return all loop results in a same string? Ans: Build a string then log it after loop.
+
+// 2) Breaking up into sub-problems
+// - There is only 1 for loop.
+// - The value we are getting from each iteration will be stored in the same string
+// - How to show the days' numbers
+
+function printForecast(arr) {
+    let thermoDisplay = "... ";
+
+    for (let i = 0; i < arr.length; i++) {
+        thermoDisplay += `${arr[i]}°C in ${i + 1} days ... `
+    } return thermoDisplay;
+}
+
+console.log(printForecast([17, 21, 23]));
