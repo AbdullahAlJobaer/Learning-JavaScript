@@ -130,7 +130,8 @@ const measureKelvin = function () {
         type: "temp",
         unit: "celsius",
         // C) FIX
-        value: Number(prompt("Degree celsius:"))
+        //value: Number(prompt("Degree celsius:"))
+        value: 10
     };
 
     // B) FIND
@@ -146,3 +147,31 @@ const measureKelvin = function () {
 
 // A) IDENTIFY
 console.log(measureKelvin());
+
+
+
+
+// Using a debugger
+function calcTempAmplitudeBug(t1, t2) {
+    const temps = t1.concat(t2);
+    console.log(temps);
+
+    let max = 0;
+    let min = 0;
+
+    for (let i = 0; i < temps.length; i++) {
+        const currTemp = temps[i];
+
+        if (typeof currTemp !== "number") continue;
+
+        if (currTemp > max) max = currTemp;
+        if (currTemp < min) min = currTemp;
+    }
+
+    console.log(`Max: ${max}`);
+    console.log(`Min: ${min}`);
+    return max - min;
+}
+
+// A) IDENTIFY
+console.log(calcTempAmplitudeBug([3, 5, 1], [9, 4, 5]));
