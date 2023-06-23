@@ -82,10 +82,11 @@ Examples (Input ==> Output):
 
 "I love arrays they are my favorite" ==> ["I", "love", "arrays", "they", "are", "my", "favorite"]
 */
-
+/*
 function stringToArray(string) {
     let myString = string.split(" ")
     return myString;
 }
 
 console.log(stringToArray("I love arrays they are my favorite"));
+*/
