@@ -7,40 +7,51 @@
 // PROBLEM EXAMPLE:
 // Project Manager: We need a function that reverses whatever we pass into it.
 
-/*
 
+// USING THE PROBLEM SOLVING FRAMEWORK:
+// 1) Understanding the problem
+// - What to use for reversing the input string/number/array?
+// -
+
+// 2) Breaking up into sub-problems
+// -
+// -
+// -
 ///////////////////// NOT DONE!!! ////////////////////////
-
+/*
+console.log(
+    prompt("Enter a value").split("").reverse().join("")
+)
 function reverses(value) {
-    if (typeof value === (!"string" || !"number" || !"array")) {
-        return value;
-    } else if (typeof value === "string") {
-        let newString = "";
-        for (let i = value.length - 1; i >= 0; i--) {
-            newString += value[i];
-        }
-        return newString;
-    } else if (typeof value === Number) {
-        let newNumber;
-        for (let i = value.length - 1; i >= 0; i--) {
-            newNumber += value[i];
-        }
-        return newNumber;
-    } else if (typeof value === "array") {
-        let newArray = [];
-        for (let i = value.length - 1; i >= 0; i--) {
-            newArray += value[i];
-        }
-        return newArray;
+    // if (typeof value === (!"string" || !"number" || !"array")) {
+    //     return value;
+    // } else if (typeof value === "string") {
+    //     let newString = "";
+    //     for (let i = value.length - 1; i >= 0; i--) {
+    //         newString += value[i];
+    //     }
+    //     return newString;
+    // }
+    if (typeof value === "number") {
+        return value.split("").reverse().join("");
     }
+    // } else if (typeof value === Array) {
+    //     let newArray = [];
+    //     for (let i = value.length - 1; i >= 0; i--) {
+    //         newArray += value[i];
+    //     }
+    //     return newArray;
+
 }
 
-const inputValue = prompt("Type your value:");
+const inputString = "Robin";
+const inputNumber = "10";
+const inputArray = [1, 2, 3];
 
-console.log(reverses(inputValue));
-console.log(typeof (reverses(inputValue)));
-
+console.log(reverses(inputNumber));
+console.log(typeof (reverses(inputNumber)));
 */
+
 /*
 ///////////////////////////////////////
 // 59 - Using Google, StackOverflow and MDN
@@ -184,7 +195,7 @@ console.log(calcTempAmplitudeBug([3, 5, 1], [9, 4, 5]));
 /// 62 - CODING CHALLENGE #1 ////////////
 /*
 Given an array of forecasted maximum temperatures, the thermometer displays a
-string with the given temperatures. 
+string with the given temperatures.
 
 Example: [17, 21, 23] will print "... 17ºC in 1 days ... 21ºC in 2 days ... 23ºC in 3 days ..."
 
@@ -209,6 +220,7 @@ TEST DATA:
 // - The value we are getting from each iteration will be stored in the same string
 // - How to show the days' numbers
 
+/*
 function printForecast(arr) {
     let thermoDisplay = "... ";
 
@@ -218,3 +230,4 @@ function printForecast(arr) {
 }
 
 console.log(printForecast([17, 21, 23]));
+*/
