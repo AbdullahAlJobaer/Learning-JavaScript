@@ -128,7 +128,7 @@ After your function finds the needle it should return a message (as a string) th
 Example(Input --> Output):
 ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"] --> "found the needle at position 5" 
 */
-
+/*
 function findNeedle(haystack) {
     for (let i = 0; i < haystack.length; i++) {
         if (haystack[i] === "needle") {
@@ -139,3 +139,4 @@ function findNeedle(haystack) {
 
 const junksInput = findNeedle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]);
 console.log(junksInput);
+*/
