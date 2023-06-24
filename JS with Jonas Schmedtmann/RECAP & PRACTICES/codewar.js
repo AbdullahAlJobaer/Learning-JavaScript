@@ -100,7 +100,7 @@ CHALLENGE: Beginner - Reduce but Grow
 Given a non-empty array of integers, return the result of multiplying the values together in order. 
 Example: [1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
 */
-
+/*
 function grow(x) {
     let result = 1;
 
@@ -111,3 +111,31 @@ function grow(x) {
 
 const final = grow([1, 2, 3, 4]);
 console.log(final);
+*/
+
+
+/*
+CHALLENGE: A Needle in the Haystack
+
+Can you find the needle in the haystack?
+
+Write a function findNeedle() that takes an array full of junk but containing one "needle"
+
+After your function finds the needle it should return a message (as a string) that says:
+
+"found the needle at position " plus the index it found the needle, so:
+
+Example(Input --> Output):
+["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"] --> "found the needle at position 5" 
+*/
+
+function findNeedle(haystack) {
+    for (let i = 0; i < haystack.length; i++) {
+        if (haystack[i] === "needle") {
+            return `found the needle at position ${i}`;
+        }
+    }
+}
+
+const junksInput = findNeedle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]);
+console.log(junksInput);
