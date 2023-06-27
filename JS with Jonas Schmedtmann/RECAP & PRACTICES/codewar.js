@@ -208,3 +208,16 @@ Implement a function which convert the given boolean value into its string repre
 Note: Only valid inputs will be given.
 */
 
+function booleanToString(b) {
+    if (b === true) {
+        return `true`;
+    } else if (b === false) {
+        return `false`;
+    } else {
+        return `Invalid input`;
+    }
+}
+
+const result = booleanToString(true);
+
+console.log(result);
