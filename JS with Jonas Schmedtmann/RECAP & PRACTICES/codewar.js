@@ -58,7 +58,7 @@ console.log(digitize(321));
 
 /*
 CHALLENGE: Returning Strings
-Make a function that will return a greeting statement that uses an input; your program should return, 
+Make a function that will return a greeting statement that uses an input; your program should return,
 "Hello, <name> how are you doing today?".
 */
 /*
@@ -97,7 +97,7 @@ console.log(stringToArray("I love arrays they are my favorite"));
 /*
 CHALLENGE: Beginner - Reduce but Grow
 
-Given a non-empty array of integers, return the result of multiplying the values together in order. 
+Given a non-empty array of integers, return the result of multiplying the values together in order.
 Example: [1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
 */
 /*
@@ -126,7 +126,7 @@ After your function finds the needle it should return a message (as a string) th
 "found the needle at position " plus the index it found the needle, so:
 
 Example(Input --> Output):
-["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"] --> "found the needle at position 5" 
+["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"] --> "found the needle at position 5"
 */
 /*
 function findNeedle(haystack) {
@@ -174,11 +174,11 @@ console.log(count);
 /*
 CHALLENGE: DNA to RNA Conversion
 
-Deoxyribonucleic acid, DNA is the primary information storage molecule in biological systems. It is 
+Deoxyribonucleic acid, DNA is the primary information storage molecule in biological systems. It is
 composed of four nucleic acid bases Guanine ('G'), Cytosine ('C'), Adenine ('A'), and Thymine ('T').
 
-Ribonucleic acid, RNA, is the primary messenger molecule in cells. RNA differs slightly from DNA its 
-chemical structure and contains no Thymine. In RNA Thymine is replaced by another nucleic acid 
+Ribonucleic acid, RNA, is the primary messenger molecule in cells. RNA differs slightly from DNA its
+chemical structure and contains no Thymine. In RNA Thymine is replaced by another nucleic acid
 Uracil ('U').
 
 Create a function which translates a given DNA string into RNA.
@@ -186,7 +186,7 @@ Create a function which translates a given DNA string into RNA.
 For example:
 "GCAT"  =>  "GCAU"
 
-The input string can be of arbitrary length - in particular, it may be empty. All input is guaranteed 
+The input string can be of arbitrary length - in particular, it may be empty. All input is guaranteed
 to be valid, i.e. each input string will only ever consist of 'G', 'C', 'A' and/or 'T'.
 */
 /*
@@ -207,7 +207,7 @@ Implement a function which convert the given boolean value into its string repre
 
 Note: Only valid inputs will be given.
 */
-
+/*
 function booleanToString(b) {
     if (b === true) {
         return `true`;
@@ -220,4 +220,40 @@ function booleanToString(b) {
 
 const result = booleanToString(true);
 
+console.log(result);
+*/
+
+
+
+/*
+CHALLENGE: Rock Paper Scissors
+
+Let's play! You have to return which player won! In case of a draw return Draw!.
+
+Examples(Input1, Input2 --> Output):
+
+"scissors", "paper" --> "Player 1 won!"
+"scissors", "rock" --> "Player 2 won!"
+"paper", "paper" --> "Draw!"
+*/
+
+const rps = (p1, p2) => {
+    if (p1 === "scissors" && p2 === "paper") {
+        return "Player 1 won!";
+    } else if (p1 === "paper" && p2 === "scissors") {
+        return "Player 2 won!"
+    } else if (p1 === "scissors" && p2 === "rock") {
+        return "Player 2 won!";
+    } else if (p1 === "rock" && p2 === "scissors") {
+        return "Player 1 won!";
+    } else if (p1 === "paper" && p2 === "rock") {
+        return "Player 1 won!";
+    } else if (p1 === "rock" && p2 === "paper") {
+        return "Player 2 won!"
+    } else if ((p1 === "paper" && p2 === "paper") || (p1 === "rock" && p2 === "rock") || ((p1 === "scissors" && p2 === "scissors"))) {
+        return "Draw!";
+    }
+};
+
+const result = rps("rock", "paper");
 console.log(result);
