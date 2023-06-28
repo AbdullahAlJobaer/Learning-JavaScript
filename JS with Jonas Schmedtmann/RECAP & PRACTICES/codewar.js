@@ -273,4 +273,3 @@ const rps = (p1, p2) => {
 
 const result = rps("rock", "paper");
 console.log(result);
-
