@@ -293,3 +293,11 @@ true     | false    => true
 false    | true     => false
 false    | false    => false
 */
+
+function setAlarm(employed, vacation) {
+    return employed && !vacation;
+}
+
+const result = setAlarm(true, true);
+
+console.log(result);
