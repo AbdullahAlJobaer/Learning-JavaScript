@@ -213,7 +213,7 @@ document.querySelector(".again").addEventListener
 
 
 // 77 - Implementing Highscores
-
+/*
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;     // Application state
 let highScore = 0;
@@ -277,5 +277,81 @@ document.querySelector(".again").addEventListener
         document.querySelector(".number").style.width = "15rem";
         document.querySelector("body").style.transition = "background-color 400ms, width 400ms";
         document.querySelector(".message").textContent = "Start guessing...";
+        document.querySelector(".guess").value = null;
+    });
+*/
+
+
+
+// 78 - Refactoring Our Code: The DRY Principle
+
+let secretNumber = Math.trunc(Math.random() * 20) + 1;
+let score = 20;     // Application state
+let highScore = 0;  // Application state
+
+function displayMessage(message) {
+    document.querySelector(".message").textContent = message;
+}
+
+function displayScore(setScore) {
+    document.querySelector(".score").textContent = setScore;
+}
+
+document.querySelector(".check").addEventListener
+    ("click", function () {
+        const guess = Number(document.querySelector(".guess").value)
+
+        console.log(guess, typeof guess);
+
+        // When there is no input
+        if (!guess) {
+            displayMessage("⛔ No Number");
+            //document.querySelector(".message").textContent = "⛔ No Number";
+
+            // When player wins
+        } else if (guess === secretNumber) {
+            document.querySelector(".number").textContent = secretNumber;
+            displayMessage("🎉 Correctly Guessed!");
+            //document.querySelector(".message").textContent = "🎉 Correctly Guessed!";
+            document.querySelector("body").style.backgroundColor = "#60b347";
+            document.querySelector(".number").style.width = "30rem";
+            document.querySelector(".number").style.transition = "width 500ms";
+
+            if (score > highScore) {
+                highScore = score;
+                document.querySelector(".highscore").textContent = highScore;
+            }
+
+
+            // When guess is wrong
+        } else if (guess !== secretNumber) {
+            if (score > 1) {
+                displayMessage(guess > secretNumber ? "📈 Too High!" : "📉 Too Low!");
+                //document.querySelector(".message").textContent = guess > secretNumber ? "📈 Too High!" : "📉 Too Low!";
+                score--;
+                displayScore(score);
+                //document.querySelector(".score").textContent = score;
+            } else {
+                displayMessage("❌ You Lost the Game!");
+                //document.querySelector(".message").textContent = "❌ You Lost the Game!";
+                displayScore(0);
+                //document.querySelector(".score").textContent = 0;
+            }
+        }
+    });
+
+document.querySelector(".again").addEventListener
+    ("click", function () {
+        score = 20;
+        secretNumber = Math.trunc(Math.random() * 20) + 1;
+
+        displayScore(score);
+        //document.querySelector(".score").textContent = score;
+        document.querySelector(".number").textContent = "?";
+        document.querySelector("body").style.backgroundColor = "#222";
+        document.querySelector(".number").style.width = "15rem";
+        document.querySelector("body").style.transition = "background-color 400ms, width 400ms";
+        displayMessage("Start guessing...");
+        //document.querySelector(".message").textContent = "Start guessing...";
         document.querySelector(".guess").value = null;
     });
